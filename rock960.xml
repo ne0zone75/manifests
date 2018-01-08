@@ -2,12 +2,10 @@
 <manifest>
 
   <remote  name="rockchip-linux"
-           fetch="."
-           review="https://github.com/rockchip-linux/" />
+           fetch="https://github.com/rockchip-linux/"/>
 
   <remote  name="96rocks"
-           fetch="."
-           review="https://github.com/96rocks" />
+	       fetch="https://github.com/96rocks"/>
 
   <default revision="master"
            remote="rockchip-linux"
