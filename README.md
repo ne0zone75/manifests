@@ -29,7 +29,7 @@ You will get
 
 ## Install toolchain and other build tools
 
-    sudo apt-get install gcc-aarch64-linux-gnu device-tree-compiler libncurses5 libncurses5-dev build-essential
+    sudo apt-get install gcc-aarch64-linux-gnu device-tree-compiler libncurses5 libncurses5-dev build-essential libssl-dev
 
 ## Build u-boot
 
