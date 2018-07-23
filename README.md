@@ -33,7 +33,8 @@ You will get
 
 ## Build u-boot
 
-    ./build/mk-uboot.sh rock960
+    ./build/mk-uboot.sh rock960ab     #For model A and mode B
+    ./build/mk-uboot.sh rock960c      #For model C
 
 The generated images will be copied to out/u-boot folder
 
@@ -42,12 +43,13 @@ The generated images will be copied to out/u-boot folder
 
 ## Build kernel
 
-    ./build/mk-kernel.sh rock960
+    ./build/mk-kernel.sh rock960ab    #For model A and mode B
+    ./build/mk-kernel.sh rock960c     #For model C
 
 You will get the kernel image and dtb file
 
     ls out/kernel/
-    Image  rock960-linux.dtb
+    Image  rock960-model-ab-linux.dtb rock960-model-c-linux.dtb
 
 ## Make rootfs image
 
@@ -70,15 +72,13 @@ This will install Rockchip specified packages and hooks on the standard Debian r
 
     build/mk-image.sh -c rk3399 -t system -r rootfs/linaro-rootfs.img
 
-This will combine u-boot, kernel and rootfs into one image and generate GPT partition table. Output is out/system.img
+This will combine u-boot, kernel and rootfs into one image and generate GPT partition table. Output is 
+
+    out/system.img
 
 ## Flash the image
 
-Press and hold the **Maskrom** key then press reset, the board will boot into [maskrom](http://opensource.rock-chips.com/wiki_Rockusb#Maskrom_mode) mode. Now connect the Sapphire and your PC with type C to type A cable.
-
-    build/flash_tool.sh   -c rk3399 -p system  -i  out/system.img
-
-This will flash the image to on board eMMC from the type C USB port. After flashing finished, the board will reboot, now you boot into Debian Linux.
+Follow instuctions [here](https://www.96boards.org/documentation/consumer/rock/rock960/installation/).
 
 ## Troubleshooting
 
