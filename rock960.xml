@@ -12,7 +12,7 @@
            sync-j="4" />
 
   <project path="kernel" remote="96rocks" name="kernel" upstream="release-4.4" revision="rock960-4.4-dev"/>
-  <project path="u-boot" remote="96rocks" name="u-boot" upstream="release" revision="release"/>
+  <project path="u-boot" remote="96rocks" name="u-boot" upstream="rock960-debian" revision="rock960-debian"/>
   <project path="rootfs" remote="rockchip-linux" name="rk-rootfs-build" />
   <project path="rkbin" remote="96rocks" name="rkbin" revision="29mirror"/>
 
