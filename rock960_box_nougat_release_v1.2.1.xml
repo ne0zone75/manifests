@@ -554,7 +554,7 @@
 <project name="vendor-widevine" path="vendor/widevine" remote="rk" revision="403a1f000a9d9643fc4d9346837bbd7902f56506" upstream="rk3399-box-7.1"/>
 <project name="vendor-rockchip-common" path="vendor/rockchip/common" remote="rk" revision="4587d4ac8a06337942c3502fda4718bbf219b532" upstream="rk3399-box-7.1"/>
 <project name="rkst" path="rkst" remote="rk" revision="c264f23734649fdb83d983bea7bcf11612651926" upstream="rk3399-box-7.1"/>
-<project name="u-boot" path="u-boot" remote="96rocks" revision="cbb922dcf564664b71fd93e4e24b3b3bbebe6e4c" upstream="rk3399-box-7.1"/>
+<project name="u-boot" path="u-boot" remote="96rocks" revision="74d8a2a812592738f8827f4374bb8bbbd9952c93" upstream="rk3399-box-7.1"/>
 <project name="toolchain/binutils" path="toolchain/binutils" revision="c327c9c1bcffd231fcaa05f3fd8c047d1fe0afcc" upstream="refs/tags/android-7.1.2_r6"/>
 <project name="kernel" path="kernel" remote="96rocks" revision="6a8a4519845f8de03c1700c2b37ec66380af8dfd" upstream="rk3399-box-7.1"/>
 </manifest>
