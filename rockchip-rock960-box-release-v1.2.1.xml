@@ -4,8 +4,8 @@
 <project name="RKDocs" path="RKDocs" remote="rk" revision="7a59e45665825cb735c58a15ee73d5097a1ae292" upstream="rk3399-box-7.1"/>
 <project name="RKTools" path="RKTools" remote="rk" revision="3dc8b95c4f4877684bff041ed868102aded20343" upstream="rk3399-box-7.1"/>
 <project groups="pdk" remote="rk" name="bionic" path="bionic" revision="8b2e5b977118ebb8447cdf429c4a6be534c4fd1b" upstream="rk3399-box-7.1"/>
-<project groups="pdk" remote="rk" name="bootable-recovery" path="bootable/recovery" revision="47d648dcfe87a9ae65727a8fcfd22a85b3e07ff2" upstream="rk3399-box-7.1"/>
-<project groups="pdk,tradefed" remote="rk" name="build" path="build" revision="c8a3e0a0958efd0b96a6d26fe2a15921bc0fb97d" upstream="rk3399-box-7.1">
+<project groups="pdk" remote="rk" name="bootable-recovery" path="bootable/recovery" revision="7778c22191126f3948c4fdffd1d4edd3bf0648e7" upstream="rk3399-box-7.1"/>
+<project groups="pdk,tradefed" remote="rk" name="build" path="build" revision="cd27fa47410a101886fae0cc208f3a38f3c143ec" upstream="rk3399-box-7.1">
 <copyfile dest="Makefile" src="core/root.mk"/>
 </project>
 
@@ -60,7 +60,7 @@
 <copyfile dest="build.sh" src="build-rk3399-box.sh"/>
 <copyfile dest="javaenv.sh" src="javaenv.sh"/>
 </project>
-<project name="device-rockchip-common" path="device/rockchip/common" remote="rk" revision="79c95c4da622b512a868bae147f982f81f52c6ef" upstream="rk3399-box-7.1">
+<project name="device-rockchip-common" path="device/rockchip/common" remote="rk" revision="118e82eca01bc79e83c35af98d27c42d788802ac" upstream="rk3399-box-7.1">
 <copyfile dest=".classpath" src=".classpath"/>
 <copyfile dest="mkimage.sh" src="mkimage.sh"/>
 </project>
