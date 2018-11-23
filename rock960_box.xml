@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+<project groups="pdk-cw-fs,pdk-fs" remote="96rocks" name="frameworks-base" path="frameworks/base" revision="bd783b4e8279762e1650ff038b4590784cf30254" upstream="rk3399-box-7.1"/>
+<project groups="pdk" remote="96rocks" name="frameworks-native" path="frameworks/native" revision="8cf141039b23c90a783e27b74799a1997bf469a8" upstream="rk3399-box-7.1"/>
+<project name="external-wlan_loader" path="external/wlan_loader" remote="96rocks" revision="e2322f583b1697413807868144732753c3928081" upstream="rk3399-box-7.1"/>
+<project name="u-boot" path="u-boot" remote="96rocks" revision="74d8a2a812592738f8827f4374bb8bbbd9952c93" upstream="rk3399-box-7.1"/>
+<project name="kernel" path="kernel" remote="96rocks" revision="6a8a4519845f8de03c1700c2b37ec66380af8dfd" upstream="rk3399-box-7.1"/>
+
+</manifest>

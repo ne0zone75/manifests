@@ -1,1 +1,14 @@
-rock960_box_nougat_release_v1.2.1.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+<remote fetch="https://android.googlesource.com/" name="aosp"/>
+<remote fetch="https://github.com/rockchip-android/" name="rk"/>
+<remote fetch="https://github.com/96rocks/" name="96rocks"/>
+
+<default remote="aosp" revision="refs/tags/android-7.1.2_r6" sync-c="true" sync-j="4"/>
+
+<include name="google.xml" />
+<include name="rockchip-rock960-box-release-v1.2.1.xml" />
+<include name="rock960_box.xml" />
+
+</manifest>
