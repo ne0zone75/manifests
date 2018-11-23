@@ -4,7 +4,7 @@
 <project name="RKDocs" path="RKDocs" remote="rk" revision="7a59e45665825cb735c58a15ee73d5097a1ae292" upstream="rk3399-box-7.1"/>
 <project name="RKTools" path="RKTools" remote="rk" revision="3dc8b95c4f4877684bff041ed868102aded20343" upstream="rk3399-box-7.1"/>
 <project groups="pdk" remote="rk" name="bionic" path="bionic" revision="8b2e5b977118ebb8447cdf429c4a6be534c4fd1b" upstream="rk3399-box-7.1"/>
-<project groups="pdk" remote="rk" name="bootable-recovery" path="bootable/recovery" revision="ba8d26405b86f72b7d3123dab27135ac41d55029" upstream="rk3399-box-7.1"/>
+<project groups="pdk" remote="rk" name="bootable-recovery" path="bootable/recovery" revision="47d648dcfe87a9ae65727a8fcfd22a85b3e07ff2" upstream="rk3399-box-7.1"/>
 <project groups="pdk,tradefed" remote="rk" name="build" path="build" revision="c8a3e0a0958efd0b96a6d26fe2a15921bc0fb97d" upstream="rk3399-box-7.1">
 <copyfile dest="Makefile" src="core/root.mk"/>
 </project>
@@ -60,7 +60,7 @@
 <copyfile dest="build.sh" src="build-rk3399-box.sh"/>
 <copyfile dest="javaenv.sh" src="javaenv.sh"/>
 </project>
-<project name="device-rockchip-common" path="device/rockchip/common" remote="rk" revision="182403231d7e79a2442f272008ee6e2a3ea0fa53" upstream="rk3399-box-7.1">
+<project name="device-rockchip-common" path="device/rockchip/common" remote="rk" revision="79c95c4da622b512a868bae147f982f81f52c6ef" upstream="rk3399-box-7.1">
 <copyfile dest=".classpath" src=".classpath"/>
 <copyfile dest="mkimage.sh" src="mkimage.sh"/>
 </project>
@@ -81,6 +81,6 @@
 <project groups="pdk" name="external-rk-pcba-test" path="external/rk-pcba-test" remote="rk" revision="0ad36c371be0dfab152234448a62c8e830e23e11" upstream="rk3399-box-7.1"/>
 <project name="external-usb_modeswitch" path="external/usb_modeswitch" remote="rk" revision="416cd763c9145295eb6d462facf8726a48642ff1" upstream="rk3399-box-7.1"/>
 <project name="vendor-widevine" path="vendor/widevine" remote="rk" revision="403a1f000a9d9643fc4d9346837bbd7902f56506" upstream="rk3399-box-7.1"/>
-<project name="vendor-rockchip-common" path="vendor/rockchip/common" remote="rk" revision="4587d4ac8a06337942c3502fda4718bbf219b532" upstream="rk3399-box-7.1"/>
+<project name="vendor-rockchip-common" path="vendor/rockchip/common" remote="rk" revision="066ededea9fffba47989349f911c296a0852aa21" upstream="rk3399-box-7.1"/>
 <project name="rkst" path="rkst" remote="rk" revision="c264f23734649fdb83d983bea7bcf11612651926" upstream="rk3399-box-7.1"/>
 </manifest>
