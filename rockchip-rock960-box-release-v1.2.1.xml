@@ -60,7 +60,7 @@
 <copyfile dest="build.sh" src="build-rk3399-box.sh"/>
 <copyfile dest="javaenv.sh" src="javaenv.sh"/>
 </project>
-<project name="device-rockchip-common" path="device/rockchip/common" remote="rk" revision="118e82eca01bc79e83c35af98d27c42d788802ac" upstream="rk3399-box-7.1">
+<project name="device-rockchip-common" path="device/rockchip/common" remote="rk" revision="b06d326e327deaf0f672e938572b75b9ea0d0308" upstream="rk3399-box-7.1">
 <copyfile dest=".classpath" src=".classpath"/>
 <copyfile dest="mkimage.sh" src="mkimage.sh"/>
 </project>
