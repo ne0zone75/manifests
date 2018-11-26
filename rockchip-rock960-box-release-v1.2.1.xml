@@ -2,7 +2,7 @@
 <manifest>
 
 <project name="RKDocs" path="RKDocs" remote="rk" revision="7a59e45665825cb735c58a15ee73d5097a1ae292" upstream="rk3399-box-7.1"/>
-<project name="RKTools" path="RKTools" remote="rk" revision="3dc8b95c4f4877684bff041ed868102aded20343" upstream="rk3399-box-7.1"/>
+<project name="RKTools" path="RKTools" remote="rk" revision="9b846a6541c766217f7bf6c50c1e4394acdb2bed" upstream="rk3399-box-7.1"/>
 <project groups="pdk" remote="rk" name="bionic" path="bionic" revision="8b2e5b977118ebb8447cdf429c4a6be534c4fd1b" upstream="rk3399-box-7.1"/>
 <project groups="pdk" remote="rk" name="bootable-recovery" path="bootable/recovery" revision="7778c22191126f3948c4fdffd1d4edd3bf0648e7" upstream="rk3399-box-7.1"/>
 <project groups="pdk,tradefed" remote="rk" name="build" path="build" revision="cd27fa47410a101886fae0cc208f3a38f3c143ec" upstream="rk3399-box-7.1">
