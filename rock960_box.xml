@@ -8,5 +8,5 @@
 <project name="kernel" path="kernel" remote="96rocks" revision="519d009f768bf761a2da982fbf497c29dce2f615" upstream="rk3399-box-7.1"/>
 <project name="rkbin"  path="rkbin"  remote="96rocks" revision="21756f5b5a108fb9d4fd1ffcdb819474892d937f" upstream="rk3399-box-7.1"/>
 <project name="platform/prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu"  path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu"  remote="96rocks" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="rk3399-box-7.1"/>
-
+<project name="open-gapps" path="vendor/opengapps" remote="96rocks" revision="fbfc18444aa2391798959f5b71daa7a8a862d434" upstream="rk3399-box-7.1"/>
 </manifest>

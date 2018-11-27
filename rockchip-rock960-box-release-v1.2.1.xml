@@ -55,7 +55,7 @@
 <project groups="pdk" remote="rk" name="system-netd" path="system/netd" revision="1d179c056623c5960f4c824128465901c9e4b01f" upstream="rk3399-box-7.1"/>
 <project groups="pdk" remote="rk" name="system-sepolicy" path="system/sepolicy" revision="38ee595100c26946fd918a4b3bbdea97d6aa8e9c" upstream="rk3399-box-7.1"/>
 <project groups="pdk" remote="rk" name="system-vold" path="system/vold" revision="971f19a4134ff58b4f9b47755f5ebc25e93466fd" upstream="rk3399-box-7.1"/>
-<project name="device-rockchip-rk3399" path="device/rockchip/rk3399" remote="rk" revision="ce70b4769605f58d4511d3c01b232387a063280e" upstream="rk3399-box-7.1">
+<project name="device-rockchip-rk3399" path="device/rockchip/rk3399" remote="rk" revision="70f27b221410ce8e0f8f616ca3add1706d1b06b5" upstream="rk3399-box-7.1">
 <copyfile dest="buildspec.mk" src="buildspec-rk3399-box.mk"/>
 <copyfile dest="build.sh" src="build-rk3399-box.sh"/>
 <copyfile dest="javaenv.sh" src="javaenv.sh"/>
