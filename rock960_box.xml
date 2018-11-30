@@ -4,7 +4,7 @@
 <project groups="pdk-cw-fs,pdk-fs" remote="96rocks" name="frameworks-base" path="frameworks/base" revision="bd783b4e8279762e1650ff038b4590784cf30254" upstream="rk3399-box-7.1"/>
 <project groups="pdk" remote="96rocks" name="frameworks-native" path="frameworks/native" revision="8cf141039b23c90a783e27b74799a1997bf469a8" upstream="rk3399-box-7.1"/>
 <project name="external-wlan_loader" path="external/wlan_loader" remote="96rocks" revision="e2322f583b1697413807868144732753c3928081" upstream="rk3399-box-7.1"/>
-<project name="u-boot" path="u-boot" remote="96rocks" revision="b75985a6207fc3508a92526d9881f636b1670ee0" upstream="stable-4.4"/>
+<project name="u-boot" path="u-boot" remote="96rocks" revision="c27cae18bf000a65f3cace4aa62952cc76d4e0d3" upstream="stable-4.4"/>
 <project name="kernel" path="kernel" remote="96rocks" revision="519d009f768bf761a2da982fbf497c29dce2f615" upstream="rk3399-box-7.1"/>
 <project name="rkbin"  path="rkbin"  remote="96rocks" revision="21756f5b5a108fb9d4fd1ffcdb819474892d937f" upstream="rk3399-box-7.1"/>
 <project name="platform/prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu"  path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu"  remote="96rocks" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="rk3399-box-7.1"/>
