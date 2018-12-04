@@ -2,13 +2,7 @@
 <manifest>
 
 <project name="RKDocs" path="RKDocs" remote="rk" revision="7a59e45665825cb735c58a15ee73d5097a1ae292" upstream="rk3399-box-7.1"/>
-<project name="RKTools" path="RKTools" remote="rk" revision="94c48a657f8978061336369b00c78c474135e241" upstream="rk3399-box-7.1"/>
 <project groups="pdk" remote="rk" name="bionic" path="bionic" revision="8b2e5b977118ebb8447cdf429c4a6be534c4fd1b" upstream="rk3399-box-7.1"/>
-<project groups="pdk" remote="rk" name="bootable-recovery" path="bootable/recovery" revision="7778c22191126f3948c4fdffd1d4edd3bf0648e7" upstream="rk3399-box-7.1"/>
-<project groups="pdk,tradefed" remote="rk" name="build" path="build" revision="cd27fa47410a101886fae0cc208f3a38f3c143ec" upstream="rk3399-box-7.1">
-<copyfile dest="Makefile" src="core/root.mk"/>
-</project>
-
 <project groups="pdk-fs" remote="rk" name="external-deqp" path="external/deqp" revision="04401ff2234917af4c98aa58654cd178771b91ab" upstream="rk3399-box-7.1"/>
 <project groups="pdk" remote="rk" name="external-f2fs-tools" path="external/f2fs-tools" revision="d5e720d2fb12cbe0e7be2fce95c60b394bf4e01c" upstream="rk3399-box-7.1"/>
 <project groups="pdk" remote="rk" name="external-libdrm" path="external/libdrm" revision="99304b333e8217db19d64327027cd93daaf97121" upstream="rk3399-box-7.1"/>
@@ -55,15 +49,7 @@
 <project groups="pdk" remote="rk" name="system-netd" path="system/netd" revision="1d179c056623c5960f4c824128465901c9e4b01f" upstream="rk3399-box-7.1"/>
 <project groups="pdk" remote="rk" name="system-sepolicy" path="system/sepolicy" revision="38ee595100c26946fd918a4b3bbdea97d6aa8e9c" upstream="rk3399-box-7.1"/>
 <project groups="pdk" remote="rk" name="system-vold" path="system/vold" revision="971f19a4134ff58b4f9b47755f5ebc25e93466fd" upstream="rk3399-box-7.1"/>
-<project name="device-rockchip-rk3399" path="device/rockchip/rk3399" remote="rk" revision="70f27b221410ce8e0f8f616ca3add1706d1b06b5" upstream="rk3399-box-7.1">
-<copyfile dest="buildspec.mk" src="buildspec-rk3399-box.mk"/>
-<copyfile dest="build.sh" src="build-rk3399-box.sh"/>
-<copyfile dest="javaenv.sh" src="javaenv.sh"/>
-</project>
-<project name="device-rockchip-common" path="device/rockchip/common" remote="rk" revision="b06d326e327deaf0f672e938572b75b9ea0d0308" upstream="rk3399-box-7.1">
-<copyfile dest=".classpath" src=".classpath"/>
-<copyfile dest="mkimage.sh" src="mkimage.sh"/>
-</project>
+
 <project name="hardware-rockchip-audio" path="hardware/rockchip/audio" remote="rk" revision="1674f1b749b74a6d43771aa666d95ef302a29408" upstream="rk3399-box-7.1"/>
 <project name="hardware-rockchip-camera" path="hardware/rockchip/camera" remote="rk" revision="1fb5e9928af1770040209649e5e081bfc109bd4d" upstream="rk3399-box-7.1"/>
 <project name="hardware-rockchip-hwcomposer" path="hardware/rockchip/hwcomposer" remote="rk" revision="6b57f0476865de711b2ed84708d44dfde8af4dda" upstream="rk3399-box-7.1"/>
@@ -81,6 +67,9 @@
 <project groups="pdk" name="external-rk-pcba-test" path="external/rk-pcba-test" remote="rk" revision="0ad36c371be0dfab152234448a62c8e830e23e11" upstream="rk3399-box-7.1"/>
 <project name="external-usb_modeswitch" path="external/usb_modeswitch" remote="rk" revision="416cd763c9145295eb6d462facf8726a48642ff1" upstream="rk3399-box-7.1"/>
 <project name="vendor-widevine" path="vendor/widevine" remote="rk" revision="403a1f000a9d9643fc4d9346837bbd7902f56506" upstream="rk3399-box-7.1"/>
-<project name="vendor-rockchip-common" path="vendor/rockchip/common" remote="rk" revision="066ededea9fffba47989349f911c296a0852aa21" upstream="rk3399-box-7.1"/>
 <project name="rkst" path="rkst" remote="rk" revision="c264f23734649fdb83d983bea7bcf11612651926" upstream="rk3399-box-7.1"/>
+
+<!-- add -->
+<project name="open-gapps" path="vendor/opengapps" remote="rk" revision="fbfc18444aa2391798959f5b71daa7a8a862d434" upstream="rk3399-box-7.1"/>
+<project name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu"  path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu"  remote="rk" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="rk3399-box-7.1"/>
 </manifest>
