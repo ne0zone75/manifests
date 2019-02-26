@@ -48,7 +48,7 @@
   <project clone-depth="1" groups="device,hikey,pdk" name="device/linaro/hikey-kernel" revision="16a2c660ae827f7f3352f6cb2fe29caafc918004" upstream="refs/tags/android-9.0.0_r33"/>
   <project groups="pdk" name="device/sample" revision="64f95592f3bc922952396445d7dbc7acebdefd96" upstream="refs/tags/android-9.0.0_r33"/>
   <project name="docs/android" path="RKDocs/android" remote="rk" revision="5ac4192939f18af9ab8e8cfca4627db13b3df0c7" upstream="rk33/mid/android-9.0"/>
-  <project name="docs/common" path="RKDocs/common" remote="rk" revision="ff221d81854c18de2e1d3f4ddcd766ea6adbaa72" upstream="rk33/mid/android-8.1"/>
+  <project name="docs/common" path="RKDocs/common" remote="rk" revision="d2d0b01644a1e39af8c0d3a6a4c08e495f9177bb" upstream="rk33/mid/android-8.1"/>
   <project name="docs/rk3288" path="RKDocs/rk3288" remote="rk3288" revision="00b54411200bcfe1cdd08d4142ff74cdc7869977" upstream="rk33/mid/android9.0"/>
   <project groups="vts,pdk" name="kernel/configs" revision="f65b344e69ebe936d3148cfb56d446e35e4dce17" upstream="refs/tags/android-9.0.0_r33"/>
   <project name="kernel/tests" revision="644f4d74b9212e14dc39c21763ae76c832e14f66" upstream="refs/tags/android-9.0.0_r33"/>
@@ -530,7 +530,7 @@
   <project groups="pdk-fs" name="platform/packages/apps/HTMLViewer" path="packages/apps/HTMLViewer" revision="b59af56842e157cff48480a2db0d95aa2e072be8" upstream="refs/tags/android-9.0.0_r33"/>
   <project groups="pdk-fs" name="platform/packages/apps/KeyChain" path="packages/apps/KeyChain" revision="c9206710992ce8ab07306c322b3d593328131a9c" upstream="refs/tags/android-9.0.0_r33"/>
   <project groups="pdk-fs" name="platform/packages/apps/Launcher2" path="packages/apps/Launcher2" revision="c65db6c7a18632774c25dae2339fe149ee3e91d9" upstream="refs/tags/android-9.0.0_r33"/>
-  <project groups="pdk-fs" name="platform/packages/apps/Launcher3" path="packages/apps/Launcher3" revision="777bdd928ae7a030d9ed16d5c94b693cec68b6db" upstream="rk33/mid/9.0/develop"/>
+  <project groups="pdk-fs" name="platform/packages/apps/Launcher3" path="packages/apps/Launcher3" revision="413a57089e54c515d8a9999da403524fe2f4038c" upstream="rk33/mid/9.0/develop"/>
   <project groups="pdk-fs" name="platform/packages/apps/LegacyCamera" path="packages/apps/LegacyCamera" revision="819fa02731407819729415eb76125af9065abc7a" upstream="refs/tags/android-9.0.0_r33"/>
   <project groups="pdk-fs" name="platform/packages/apps/ManagedProvisioning" path="packages/apps/ManagedProvisioning" revision="b078339418ad319f9b82729a4be25c131d1f8cda" upstream="refs/tags/android-9.0.0_r33"/>
   <project groups="pdk-fs" name="platform/packages/apps/Messaging" path="packages/apps/Messaging" revision="dc683fa0fdf495a717e36ccc40bbe22265b6787f" upstream="refs/tags/android-9.0.0_r33"/>
@@ -697,7 +697,7 @@
     <copyfile dest="buildspec.mk" src="buildspec-rk3288.mk"/>
     <copyfile dest="build.sh" src="build.sh"/>
   </project>
-  <project name="rk/device/rockchip/rksdk" path="device/rockchip/common" remote="rk" revision="8e8a775a182f0027193b43ae14431d494ccf6fb8" upstream="rk33/mid/9.0/develop">
+  <project name="rk/device/rockchip/rksdk" path="device/rockchip/common" remote="rk" revision="79a495fb24135a40d9b3425ed08f1ce2b0afa5a1" upstream="rk33/mid/9.0/develop">
     <copyfile dest=".classpath" src=".classpath"/>
     <copyfile dest="mkimage.sh" src="mkimage.sh"/>
     <copyfile dest="javaenv.sh" src="javaenv.sh"/>
@@ -719,7 +719,7 @@
   <project name="rk/hardware/rk29/omx_il" path="hardware/rockchip/omx_il" remote="rk" revision="047150e77b30e9f181e7188c3f6f02415ea9a097" upstream="rk33/mid/7.0/develop"/>
   <project name="rk/hardware/rk29/power" path="hardware/rockchip/power" remote="rk" revision="6359e54197ba7ab4d8f70d7c5158b138484cb823" upstream="rk33/mid/9.0/develop"/>
   <project name="rk/hardware/rk29/sensor" path="hardware/rockchip/sensor" remote="rk" revision="204c72a857f3e21fd8edc17ef5cf9005311d8745" upstream="rk33/mid/9.0/develop"/>
-  <project name="rk/kernel" path="kernel" remote="rk3288" revision="3cbec52b29863524e1b28e5c52e09fce657bb4f9" upstream="develop-4.4"/>
+  <project name="rk/kernel" path="kernel" remote="rk3288" revision="6f30b152e8ff71db4fdb9de7d8589569a0134da0" upstream="rk3288-oreo-mr1-gms-express-baseline"/>
   <project name="rk/platform/external/abc" path="external/abc" remote="rk" revision="028d5e84675f15b083b8724ed681fb9e31a711b9" upstream="rk33/mid/develop/9.0"/>
   <project name="rk/platform/external/io" path="external/io" remote="rk" revision="ce23c82ae301239f8500e91a0008faa06db15147" upstream="rk32/mid/6.0/develop"/>
   <project name="rk/platform/external/ntfs-3g" path="external/ntfs-3g" remote="rk" revision="26216247ade4637ab2bd812ffa0372b5276efb77" upstream="rk32/mid/6.0/develop"/>
@@ -727,13 +727,13 @@
   <project name="rk/platform/system/rk_tee_user" path="external/rk_tee_user" remote="rk" revision="e1aa9109bdfa53ee0e331eea07ee8ad360d97706" upstream="master"/>
   <project name="rk/platform/vendor/Widevine" path="vendor/widevine" remote="rk" revision="5777b8f13a37d8dab24d12ad7c959520bb589de8" upstream="rk33/mid/9.0/develop"/>
   <project name="rk/platform/vendor/microsoft" path="vendor/microsoft" remote="rk" revision="6eb6f6fcbf88050b27a79cc3ba04ad8f8f1289ca" upstream="rk33/mid/8.1/develop"/>
-  <project name="rk/platform/vendor/rockchip/common" path="vendor/rockchip/common" remote="rk" revision="93ce8fbaf417e120171074cc74785785e9cefae6" upstream="rk33/mid/9.0/develop"/>
+  <project name="rk/platform/vendor/rockchip/common" path="vendor/rockchip/common" remote="rk" revision="45fe4be904ecbfc221ba185bd5b4da9609e96081" upstream="rk33/mid/9.0/develop"/>
   <project name="rk/platform/vendor/rockchip/hardware" path="vendor/rockchip/hardware" remote="rk" revision="50d9a47d71bfa247500f49d4c98787313a292c47" upstream="rk33/mid/9.0/develop"/>
   <project name="rk/prebuilts/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" remote="rk" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master"/>
   <project name="rk/prebuilts/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" path="prebuilts/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" remote="rk" revision="dd4df7dff4f1df65d78939a958b760a79e3650a1" upstream="master"/>
   <project name="rk/rkbin" path="rkbin" remote="rk" revision="22583ff81cdb5c198808539ef57647bdfe94a9d0" upstream="master"/>
   <project name="rk/rkst" path="rkst" remote="rk" revision="c264f23734649fdb83d983bea7bcf11612651926" upstream="rk32/mid/6.0/develop"/>
-  <project name="rk/u-boot" path="u-boot" remote="rk3288" revision="312f491eec55d93584a461308073e580e0a26162" upstream="next-dev"/>
+  <project name="rk/u-boot" path="u-boot" remote="rk3288" revision="8a127f59e0ceb1970f6cad34b85439fce4094dd6" upstream="next-dev"/>
   <project name="toolchain/benchmark" revision="ce43588700ff84f20b6bf6a513d8932f693e33dd" upstream="refs/tags/android-9.0.0_r33"/>
   <project groups="pdk" name="toolchain/binutils" revision="15d7fe529a4fc80dcbb21306e55cb55f7ec1cf4a" upstream="refs/tags/android-9.0.0_r33"/>
   <project groups="pdk" name="toolchain/pgo-profiles" revision="24bd8873cfbddd16a8fb4c485c6ffa3406a33489" upstream="refs/tags/android-9.0.0_r33"/>
