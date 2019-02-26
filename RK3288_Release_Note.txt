@@ -1,0 +1,5 @@
+- RK3288_Android_Pie_Beta_0.0.1.xml Release Note
+1. Support avb, lock(unlock) bootloader: fastboot oem at-(un)lock-vboot
+2. Support system as root
+3. Support Camera HAL 3.0 
+详细见 RKDocs/rk3288/RK3288_ANDROID9.0_Beta_SDK发布说明_V0.1.pdf
