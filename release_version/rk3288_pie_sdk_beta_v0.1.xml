@@ -49,7 +49,7 @@
   <project groups="pdk" name="device/sample" revision="64f95592f3bc922952396445d7dbc7acebdefd96" upstream="refs/tags/android-9.0.0_r33"/>
   <project name="docs/android" path="RKDocs/android" remote="rk" revision="5ac4192939f18af9ab8e8cfca4627db13b3df0c7" upstream="rk33/mid/android-9.0"/>
   <project name="docs/common" path="RKDocs/common" remote="rk" revision="d2d0b01644a1e39af8c0d3a6a4c08e495f9177bb" upstream="rk33/mid/android-8.1"/>
-  <project name="docs/rk3288" path="RKDocs/rk3288" remote="rk3288" revision="00b54411200bcfe1cdd08d4142ff74cdc7869977" upstream="rk33/mid/android9.0"/>
+  <project name="docs/rk3288" path="RKDocs/rk3288" remote="rk3288" revision="596d81f9aba5a34a48b3a4d8659bdb72fa9d1c4d" upstream="rk33/mid/android9.0"/>
   <project groups="vts,pdk" name="kernel/configs" revision="f65b344e69ebe936d3148cfb56d446e35e4dce17" upstream="refs/tags/android-9.0.0_r33"/>
   <project name="kernel/tests" revision="644f4d74b9212e14dc39c21763ae76c832e14f66" upstream="refs/tags/android-9.0.0_r33"/>
   <project groups="pdk" name="platform/art" path="art" revision="1f5f55bfaa13923bc5483a6f9d8189ed4edc74a6" upstream="refs/tags/android-9.0.0_r33"/>
@@ -409,7 +409,7 @@
   <project groups="pdk" name="platform/external/zopfli" path="external/zopfli" revision="4101d743cef9e1161bfc9ed4d3c8d4910c6346f7" upstream="refs/tags/android-9.0.0_r33"/>
   <project groups="pdk" name="platform/external/zxing" path="external/zxing" revision="eb95fad99b1c163e20b9ffc54a2346e650451e9d" upstream="refs/tags/android-9.0.0_r33"/>
   <project groups="pdk" name="platform/frameworks/av" path="frameworks/av" revision="b8a98ebf10def0fea3d9647ef6058e042ea393da" upstream="rk33/mid/9.0/develop"/>
-  <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/base" path="frameworks/base" revision="623c13ee7b282a1dad329ea62d9dc2a25c54cea2" upstream="rk33/mid/9.0/develop"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/base" path="frameworks/base" revision="e3e1954d4ba53773aece53deb84de944dd5a972d" upstream="rk33/mid/9.0/develop"/>
   <project groups="pdk" name="platform/frameworks/compile/libbcc" path="frameworks/compile/libbcc" revision="cd2cedc31a5a051062c87e1c215623acc3da5de8" upstream="refs/tags/android-9.0.0_r33"/>
   <project groups="pdk" name="platform/frameworks/compile/mclinker" path="frameworks/compile/mclinker" revision="708894db646abf1eccd08a7dfaadbb66a7d2b283" upstream="refs/tags/android-9.0.0_r33"/>
   <project groups="pdk" name="platform/frameworks/compile/slang" path="frameworks/compile/slang" revision="f0cee34637b4aea3af6c9f5f8635601d895f7c09" upstream="refs/tags/android-9.0.0_r33"/>
@@ -697,7 +697,7 @@
     <copyfile dest="buildspec.mk" src="buildspec-rk3288.mk"/>
     <copyfile dest="build.sh" src="build.sh"/>
   </project>
-  <project name="rk/device/rockchip/rksdk" path="device/rockchip/common" remote="rk" revision="79a495fb24135a40d9b3425ed08f1ce2b0afa5a1" upstream="rk33/mid/9.0/develop">
+  <project name="rk/device/rockchip/rksdk" path="device/rockchip/common" remote="rk" revision="c723e427f906712ef511822d0f3df4770522ac16" upstream="rk33/mid/9.0/develop">
     <copyfile dest=".classpath" src=".classpath"/>
     <copyfile dest="mkimage.sh" src="mkimage.sh"/>
     <copyfile dest="javaenv.sh" src="javaenv.sh"/>
@@ -708,7 +708,7 @@
   <project name="rk/hardware/rk29/camera_v3" path="hardware/rockchip/camera" remote="rk" revision="e2817fc726cb09c3c0934e0d8883253151f4aace" upstream="rk33/mid/9.0/develop"/>
   <project name="rk/hardware/rk29/drmservice" path="hardware/rockchip/drmservice" remote="rk" revision="ad4facc95dbe4371da482ab507916aefe458087c" upstream="rk33/mid/9.0/develop"/>
   <project name="rk/hardware/rk29/hdmicec" path="hardware/rockchip/hdmicec" remote="rk" revision="32e6a1e030e865f0dbffba11248a1d0d88694b18" upstream="rk33/atv/8.0/develop"/>
-  <project name="rk/hardware/rk29/hwcomposer_rga" path="hardware/rockchip/hwcomposer" remote="rk3288" revision="eaa543920ab1e2282b38e64823646ebda15d02d3" upstream="rk33/mid/6.0/develop_drm"/>
+  <project name="rk/hardware/rk29/hwcomposer_rga" path="hardware/rockchip/hwcomposer" remote="rk3288" revision="b5c963856cd72076a39a3ef554ae1065b8816004" upstream="rk33/mid/6.0/develop_drm"/>
   <project name="rk/hardware/rk29/jpeghw" path="hardware/rockchip/jpeghw" remote="rk" revision="72b3537df45b9f20c93c9c1031aaaa73733924a2" upstream="rk32/mid/6.0/develop"/>
   <project name="rk/hardware/rk29/libgralloc_ump" path="hardware/rockchip/libgralloc" remote="rk3288" revision="54ce74b167762a17fbf88f80305d76225e41e9af" upstream="soc_with_midgard_gpu/9.0/drm_gralloc"/>
   <project name="rk/hardware/rk29/libiep" path="hardware/rockchip/libiep" remote="rk" revision="68e274cd748d1d0e0dcd52a3ead0ee7cb64819b1" upstream="rk33/mid/9.0/develop"/>
@@ -719,7 +719,7 @@
   <project name="rk/hardware/rk29/omx_il" path="hardware/rockchip/omx_il" remote="rk" revision="047150e77b30e9f181e7188c3f6f02415ea9a097" upstream="rk33/mid/7.0/develop"/>
   <project name="rk/hardware/rk29/power" path="hardware/rockchip/power" remote="rk" revision="6359e54197ba7ab4d8f70d7c5158b138484cb823" upstream="rk33/mid/9.0/develop"/>
   <project name="rk/hardware/rk29/sensor" path="hardware/rockchip/sensor" remote="rk" revision="204c72a857f3e21fd8edc17ef5cf9005311d8745" upstream="rk33/mid/9.0/develop"/>
-  <project name="rk/kernel" path="kernel" remote="rk3288" revision="6f30b152e8ff71db4fdb9de7d8589569a0134da0" upstream="rk3288-oreo-mr1-gms-express-baseline"/>
+  <project name="rk/kernel" path="kernel" remote="rk3288" revision="8349200231597c73e489dde1cdb1775052a6ec3b" upstream="rk3288-oreo-mr1-gms-express-baseline"/>
   <project name="rk/platform/external/abc" path="external/abc" remote="rk" revision="028d5e84675f15b083b8724ed681fb9e31a711b9" upstream="rk33/mid/develop/9.0"/>
   <project name="rk/platform/external/io" path="external/io" remote="rk" revision="ce23c82ae301239f8500e91a0008faa06db15147" upstream="rk32/mid/6.0/develop"/>
   <project name="rk/platform/external/ntfs-3g" path="external/ntfs-3g" remote="rk" revision="26216247ade4637ab2bd812ffa0372b5276efb77" upstream="rk32/mid/6.0/develop"/>
@@ -727,7 +727,7 @@
   <project name="rk/platform/system/rk_tee_user" path="external/rk_tee_user" remote="rk" revision="e1aa9109bdfa53ee0e331eea07ee8ad360d97706" upstream="master"/>
   <project name="rk/platform/vendor/Widevine" path="vendor/widevine" remote="rk" revision="5777b8f13a37d8dab24d12ad7c959520bb589de8" upstream="rk33/mid/9.0/develop"/>
   <project name="rk/platform/vendor/microsoft" path="vendor/microsoft" remote="rk" revision="6eb6f6fcbf88050b27a79cc3ba04ad8f8f1289ca" upstream="rk33/mid/8.1/develop"/>
-  <project name="rk/platform/vendor/rockchip/common" path="vendor/rockchip/common" remote="rk" revision="45fe4be904ecbfc221ba185bd5b4da9609e96081" upstream="rk33/mid/9.0/develop"/>
+  <project name="rk/platform/vendor/rockchip/common" path="vendor/rockchip/common" remote="rk" revision="534d076a99c82fb6c3aa3a1f0c69820511d03919" upstream="rk33/mid/9.0/develop"/>
   <project name="rk/platform/vendor/rockchip/hardware" path="vendor/rockchip/hardware" remote="rk" revision="50d9a47d71bfa247500f49d4c98787313a292c47" upstream="rk33/mid/9.0/develop"/>
   <project name="rk/prebuilts/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" remote="rk" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master"/>
   <project name="rk/prebuilts/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" path="prebuilts/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" remote="rk" revision="dd4df7dff4f1df65d78939a958b760a79e3650a1" upstream="master"/>
