@@ -9,43 +9,6 @@
   
   <project name="RKTools" remote="rk3288" revision="95e61d457791b818cc05e988148da7f7168d3f80" upstream="rk3288/mid/develop9.0"/>
   <project groups="pdk-cw-fs,pdk" name="device/common" revision="20e35d3569a0646dceb105ccc66524d969887759" upstream="refs/tags/android-9.0.0_r33"/>
-  <project groups="pdk" name="device/generic/arm64" revision="325b7ec3eab920869050bbfedbd3461f9aed5eb5" upstream="refs/tags/android-9.0.0_r33"/>
-  <project groups="pdk" name="device/generic/armv7-a-neon" revision="9e96e041bf3c9d5b57b11f921c6339e076478a7a" upstream="refs/tags/android-9.0.0_r33"/>
-  <project groups="pdk" name="device/generic/car" revision="7c6de17c89ab48d28e2efb1e0aa66c512b2f631b" upstream="refs/tags/android-9.0.0_r33"/>
-  <project groups="pdk" name="device/generic/common" revision="f4dcfc8ad201ea0b0b5599a9fa1f1a437cb21553" upstream="refs/tags/android-9.0.0_r33"/>
-  <project groups="pdk" name="device/generic/goldfish" revision="b05b939d85b47ed8c2b53114f8116699b859df09" upstream="refs/tags/android-9.0.0_r33"/>
-  <project groups="pdk" name="device/generic/goldfish-opengl" revision="fbf2428f6754af94260af2a9588a071d22fdbd0e" upstream="refs/tags/android-9.0.0_r33"/>
-  <project groups="pdk" name="device/generic/mini-emulator-arm64" revision="77d394326f7fc17831ee7702cb8b750fe0b21443" upstream="refs/tags/android-9.0.0_r33"/>
-  <project groups="pdk" name="device/generic/mini-emulator-armv7-a-neon" revision="258706fc0ddcf2c9be48967f4766ec90efb736a5" upstream="refs/tags/android-9.0.0_r33"/>
-  <project groups="pdk" name="device/generic/mini-emulator-mips" revision="544e69736cff911c286a5d1d300dac228e23a73f" upstream="refs/tags/android-9.0.0_r33"/>
-  <project groups="pdk" name="device/generic/mini-emulator-mips64" revision="b1c36d0847fe6366527efd38fdb29d757ea887ee" upstream="refs/tags/android-9.0.0_r33"/>
-  <project groups="pdk" name="device/generic/mini-emulator-x86" revision="65d59e2be2cfd713513a05d80a0f75794ab60579" upstream="refs/tags/android-9.0.0_r33"/>
-  <project groups="pdk" name="device/generic/mini-emulator-x86_64" revision="b62205d75073783e171fbcd5f675e25e57833479" upstream="refs/tags/android-9.0.0_r33"/>
-  <project groups="pdk" name="device/generic/mips" revision="bf27f9bcb56e483310507f78f0a4b93d3f5499c5" upstream="refs/tags/android-9.0.0_r33"/>
-  <project groups="pdk" name="device/generic/mips64" revision="34300f7753b7a9fa2f7ba16bdc1f1fb8625dd4e4" upstream="refs/tags/android-9.0.0_r33"/>
-  <project groups="pdk" name="device/generic/qemu" revision="872a4b3f2cba32121e3ba5c928ccc835f0d13578" upstream="refs/tags/android-9.0.0_r33"/>
-  <project groups="device,pdk" name="device/generic/uml" revision="5ff90bb48866267b91321f1e3b5b205981fbf889" upstream="refs/tags/android-9.0.0_r33"/>
-  <project groups="pdk" name="device/generic/x86" revision="ef98c6934284e304ff04d6d264cf02fa2c1e2ef2" upstream="refs/tags/android-9.0.0_r33"/>
-  <project groups="pdk" name="device/generic/x86_64" revision="506952733fdebb5a2ef086b519ceebe86a95ae31" upstream="refs/tags/android-9.0.0_r33"/>
-  <project groups="device,pdk" name="device/google/accessory/arduino" revision="abc5159a3ca9dbb5c7e364a1eab99901a4440ac5" upstream="refs/tags/android-9.0.0_r33"/>
-  <project groups="device,pdk" name="device/google/accessory/demokit" revision="7dfe7f89a3b174709c773fe319531006e46440d9" upstream="refs/tags/android-9.0.0_r33"/>
-  <project groups="device,broadcom_pdk,generic_fs,pdk" name="device/google/atv" revision="90a76467b52ac0f5d82b3bbfc8dc0614772b4c57" upstream="rk33/mid/9.0/develop"/>
-  <project groups="device,marlin,pdk" name="device/google/contexthub" revision="e37bcfce975a2243f7ed4328d703642a48d70819" upstream="refs/tags/android-9.0.0_r33"/>
-  <project groups="device" name="device/google/cuttlefish" revision="d11a8c02fbde693158e48253527589ca608d1c2d" upstream="refs/tags/android-9.0.0_r33"/>
-  <project groups="device" name="device/google/cuttlefish_common" revision="1aa8407cee1f325cbae905f827e95caf8e49598c" upstream="refs/tags/android-9.0.0_r33"/>
-  <project clone-depth="1" groups="device" name="device/google/cuttlefish_kernel" revision="c80321a37c8b2aeaff0c4cb73bb09071cfeda0fb" upstream="refs/tags/android-9.0.0_r33"/>
-  <project groups="device,marlin,pdk" name="device/google/marlin" revision="5dcfc7871c2120725fdcf86fdb52a85f1980f434" upstream="refs/tags/android-9.0.0_r33"/>
-  <project clone-depth="1" groups="device,marlin,pdk" name="device/google/marlin-kernel" revision="5c49caf28b21b197f43493b01378865c97c6def8" upstream="refs/tags/android-9.0.0_r33"/>
-  <project groups="device,muskie,pdk" name="device/google/muskie" revision="e8f2f7526358726d8e843693d83d19d74b4db5ea" upstream="refs/tags/android-9.0.0_r33"/>
-  <project groups="device,taimen,pdk" name="device/google/taimen" revision="54b24e7195bb914ceebff982f37dade177c94d30" upstream="refs/tags/android-9.0.0_r33"/>
-  <project clone-depth="1" groups="pdk" name="device/google/vrservices" revision="bdc90104b414fd8caacf07eb960f1519de57f500" upstream="refs/tags/android-9.0.0_r33"/>
-  <project groups="device,wahoo,pdk" name="device/google/wahoo" revision="5602117af23764781db3f19bc7018b50773de85e" upstream="refs/tags/android-9.0.0_r33"/>
-  <project clone-depth="1" groups="device,wahoo,pdk" name="device/google/wahoo-kernel" revision="72deffeb31cd0de935fa9552109478f74d707701" upstream="refs/tags/android-9.0.0_r33"/>
-  <project name="device/linaro/bootloader/OpenPlatformPkg" revision="d0f8f8d7d1112bdadeb46cc9ba8c4b0321ce06b6" upstream="refs/tags/android-9.0.0_r33"/>
-  <project name="device/linaro/bootloader/arm-trusted-firmware" revision="b23f5fb1ac2033077c7204f604b2c74649b0e9a3" upstream="refs/tags/android-9.0.0_r33"/>
-  <project name="device/linaro/bootloader/edk2" revision="4f2fa8444202eddc6ab0a5aa0390d189b0e2b558" upstream="refs/tags/android-9.0.0_r33"/>
-  <project groups="device,hikey,pdk" name="device/linaro/hikey" revision="d8abea8054a7ed7c3e7bc71490e7ec5a4d7aefac" upstream="refs/tags/android-9.0.0_r33"/>
-  <project clone-depth="1" groups="device,hikey,pdk" name="device/linaro/hikey-kernel" revision="16a2c660ae827f7f3352f6cb2fe29caafc918004" upstream="refs/tags/android-9.0.0_r33"/>
   <project groups="pdk" name="device/sample" revision="64f95592f3bc922952396445d7dbc7acebdefd96" upstream="refs/tags/android-9.0.0_r33"/>
   <project name="docs/android" path="RKDocs/android" remote="rk" revision="5ac4192939f18af9ab8e8cfca4627db13b3df0c7" upstream="rk33/mid/android-9.0"/>
   <project name="docs/common" path="RKDocs/common" remote="rk" revision="d2d0b01644a1e39af8c0d3a6a4c08e495f9177bb" upstream="rk33/mid/android-8.1"/>
