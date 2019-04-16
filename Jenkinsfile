@@ -16,7 +16,7 @@ node('jolin') {
 
         env.ROCKS_RELEASE_TIME = dateFormat.format(date)
         env.ROCKS_RELEASE_DIR = "release"
-        env.ROCKS_VENDOR = "rockpi-4b"
+        env.ROCKS_VENDOR = "rock960-model-ab rock960-model-c"
         env.ROCKS_LUNCH = "rk3399_box"
         env.PATH = "/sbin:" + env.PATH
 
@@ -31,7 +31,7 @@ node('jolin') {
 
     environment.inside {
 		stage('repo') {
-		    repoSync(true, true, "https://github.com/radxa/manifests.git", "rockpi-box-9.0", "rockpi-release.xml")
+		    repoSync(true, true, "https://github.com/96rocks/manifests.git", "rock960-box-9.0", "rock960-release.xml")
 		}
 	    stage('uboot'){
 	    	sh '''#!/bin/bash
@@ -75,7 +75,21 @@ node('jolin') {
 				# make android
 				. build/envsetup.sh
 				lunch "$ROCKS_LUNCH"-userdebug
-				make -j8
+				make -j12
+
+				for hardware in $ROCKS_VENDOR;
+				do
+					rm -f out/target/product/${ROCKS_LUNCH}/boot.img
+					rm -f out/target/product/${ROCKS_LUNCH}/recovery.img
+
+					cp kernel/$hardware.img kernel/resource.img
+
+					make bootimage -j12
+					make recoveryimage -j12
+
+					cp out/target/product/${ROCKS_LUNCH}/boot.img out/target/product/${ROCKS_LUNCH}/boot-${hardware}.img
+					cp out/target/product/${ROCKS_LUNCH}/recovery.img out/target/product/${ROCKS_LUNCH}/recovery-${hardware}.img
+				done
 
 			'''
 		}
@@ -93,6 +107,9 @@ node('jolin') {
 				for hardware in $ROCKS_VENDOR;
 				do
 				    cp -f kernel/$hardware.img kernel/resource.img
+				    cp out/target/product/${ROCKS_LUNCH}/boot-${hardware}.img     out/target/product/${ROCKS_LUNCH}/boot.img
+					cp out/target/product/${ROCKS_LUNCH}/recovery-${hardware}.img out/target/product/${ROCKS_LUNCH}/recovery.img
+
 				    ./mkimage.sh
 				    
 				    # make update image
@@ -126,7 +143,8 @@ node('jolin') {
 				    cp -f rockdev/Image/idbloader.img $ROCKS_RELEASE_DIR
 				    cp -f rockdev/Image/parameter.txt $ROCKS_RELEASE_DIR
 				    cp -f rockdev/Image/kernel.img    $ROCKS_RELEASE_DIR
-				    cp -f rockdev/Image/boot.img      $ROCKS_RELEASE_DIR
+				    cp -f rockdev/Image/boot.img      $ROCKS_RELEASE_DIR/boot_$hardware.img
+				    cp -f rockdev/Image/recovery.img  $ROCKS_RELEASE_DIR/recovery_$hardware.img
 				    cp -f rockdev/Image/uboot.img     $ROCKS_RELEASE_DIR
 				    cp -f rockdev/Image/trust.img     $ROCKS_RELEASE_DIR
 				done
