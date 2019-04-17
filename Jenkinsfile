@@ -173,7 +173,7 @@ node('jolin') {
 					tag=Android9.0_${ROCKS_LUNCH}_${ROCKS_RELEASE_TIME}_${commitId}
 
 	                github-release release \
-	                  --target "rockpi-box-9.0" \
+	                  --target "rock960-box-9.0" \
 	                  --tag "${tag}" \
 	                  --name "${tag}" \
 	                  --description "${ROCKS_CHANGE}" \
