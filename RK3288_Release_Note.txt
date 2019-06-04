@@ -1,7 +1,8 @@
 - RK3288_Android_Pie_Beta_1.1.0.xml Release Note
 1. 更新 AOSP_r35 及 GMS 包版本
 2. 更新至 Cmmera HAL 2.0，解决拷机稳定性问题
-3. 其他提高拷机稳定性修改
+3. 更新 loader 解决了单通道 ddr 概率死机的问题
+4. 解决 data 区满无法启动问题
 
 - RK3288_Android_Pie_Beta_0.0.1.xml Release Note
 1. Support avb, lock(unlock) bootloader: fastboot oem at-(un)lock-vboot

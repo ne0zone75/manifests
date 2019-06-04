@@ -15,7 +15,7 @@
   <project name="docs/rk3288" path="RKDocs/rk3288" remote="rk3288" revision="6f60cf65aa70ee30f4a19b67e94e61e6373ba2a9" upstream="rk33/mid/android9.0"/>
   <project groups="vts,pdk" name="kernel/configs" revision="f65b344e69ebe936d3148cfb56d446e35e4dce17" upstream="refs/tags/android-9.0.0_r35"/>
   <project name="kernel/tests" revision="644f4d74b9212e14dc39c21763ae76c832e14f66" upstream="refs/tags/android-9.0.0_r35"/>
-  <project groups="pdk" name="platform/art" path="art" revision="1f5f55bfaa13923bc5483a6f9d8189ed4edc74a6" upstream="refs/tags/android-9.0.0_r35"/>
+  <project groups="pdk" name="platform/art" path="art" remote="aosp" revision="d23f9ef9fe1216c3bd64ceb80c67873c74b58025" upstream="rk33/mid/9.0/develop"/>
   <project groups="pdk" name="platform/bionic" path="bionic" revision="9aed280052eecc6b5b21ad200275af3f008e286c" upstream="rk33/mid/9.0/develop"/>
   <project groups="pdk" name="platform/bootable/recovery" path="bootable/recovery" revision="899aa2f1bab81644b4e728e004dee10b6b39f323" upstream="rk33/mid/9.0/develop"/>
   <project groups="pdk" name="platform/build" path="build/make" revision="ba955cb854ec3893f2932931fba8f38ce6ffed5a" upstream="rk33/mid/9.0/develop">
@@ -694,7 +694,7 @@
   <project name="rk/platform/vendor/rockchip/hardware" path="vendor/rockchip/hardware" remote="rk" revision="50d9a47d71bfa247500f49d4c98787313a292c47" upstream="rk33/mid/9.0/develop"/>
   <project name="rk/prebuilts/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" remote="rk" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master"/>
   <project name="rk/prebuilts/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" path="prebuilts/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" remote="rk" revision="dd4df7dff4f1df65d78939a958b760a79e3650a1" upstream="master"/>
-  <project name="rk/rkbin" path="rkbin" remote="rk" revision="edfc92b5ded71df04cc78d4c7f53d9bf93fdcf1d" upstream="master"/>
+  <project name="rk/rkbin" path="rkbin" remote="rk" revision="e4c1476079064ccf743742515a6b4893218b159e" upstream="master"/>
   <project name="rk/rkst" path="rkst" remote="rk" revision="c264f23734649fdb83d983bea7bcf11612651926" upstream="rk32/mid/6.0/develop"/>
   <project name="rk/u-boot" path="u-boot" remote="rk3288" revision="4f2523c3a0b201ec2c476399b5d5a756c8911c39" upstream="next-dev"/>
   <project name="toolchain/benchmark" revision="ce43588700ff84f20b6bf6a513d8932f693e33dd" upstream="refs/tags/android-9.0.0_r35"/>
