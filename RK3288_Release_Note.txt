@@ -1,6 +1,11 @@
+- RK3288_Android_Pie_Beta_1.2.0.xml Release Note
+1. 更新 AOSP_r37 及 GMS 包版本
+2. 更新解码库解决 Camera 录像拷机异常
+3. 解决由于 logo 图片显示问题导致的 kernel 启动过程卡死
+
 - RK3288_Android_Pie_Beta_1.1.0.xml Release Note
 1. 更新 AOSP_r35 及 GMS 包版本
-2. 更新至 Cmmera HAL 2.0，解决拷机稳定性问题
+2. 更新至 Cmmera HAL v2.0 版本，解决拷机稳定性问题
 3. 更新 loader 解决了单通道 ddr 概率死机的问题
 4. 解决 data 区满无法启动问题
 
