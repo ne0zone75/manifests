@@ -31,7 +31,7 @@
     <copyfile dest="mkimage.sh" src="mkimage.sh"/>
     <copyfile dest="javaenv.sh" src="javaenv.sh"/>
   </project>
-  <project name="device-rockchip-rk3399pro" path="device/rockchip/rk3399pro" remote="vamrs" revision="240efa6ad8a23935b50bf63b7952845f57b77c39" upstream="rk3399pro-android-8.1">
+  <project name="device-rockchip-rk3399pro" path="device/rockchip/rk3399pro" remote="vamrs" revision="653152dc39436550fb4800d7dc1134484b1e5a8e" upstream="rk3399pro-android-8.1">
     <copyfile dest="buildspec.mk" src="buildspec.mk"/>
     <copyfile dest="build.sh" src="build.sh"/>
   </project>
