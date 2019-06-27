@@ -11,7 +11,7 @@
   <project groups="pdk-cw-fs,pdk" name="device/common" revision="40113d035473d35c56cf62e9801ddaed8d7c16ac" upstream="refs/tags/android-9.0.0_r37"/>
   <project groups="pdk" name="device/sample" revision="64f95592f3bc922952396445d7dbc7acebdefd96" upstream="refs/tags/android-9.0.0_r37"/>
   <project name="docs/android" path="RKDocs/android" remote="rk" revision="90e6804fee0c3c9ea7bb0053b9dab278b719e5cd" upstream="rk33/mid/android-9.0"/>
-  <project name="docs/common" path="RKDocs/common" remote="rk" revision="31bf9f8b25ea85d4ae80e53c69dd4fbf3fec4b53" upstream="rk33/mid/android-8.1"/>
+  <project name="docs/common" path="RKDocs/common" remote="rk" revision="d5a4dde950f63711b6f3002b4717d17df9346667" upstream="rk33/mid/android-8.1"/>
   <project name="docs/rk3288" path="RKDocs/rk3288" remote="rk3288" revision="6f60cf65aa70ee30f4a19b67e94e61e6373ba2a9" upstream="rk33/mid/android9.0"/>
   <project groups="vts,pdk" name="kernel/configs" revision="f65b344e69ebe936d3148cfb56d446e35e4dce17" upstream="refs/tags/android-9.0.0_r37"/>
   <project name="kernel/tests" revision="a4a8e36ee17fc1adfb60acaef014589a5ca326b9" upstream="refs/tags/android-9.0.0_r37"/>
@@ -696,7 +696,7 @@
   <project name="rk/prebuilts/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" path="prebuilts/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" remote="rk" revision="dd4df7dff4f1df65d78939a958b760a79e3650a1" upstream="master"/>
   <project name="rk/rkbin" path="rkbin" remote="rk" revision="e4c1476079064ccf743742515a6b4893218b159e" upstream="master"/>
   <project name="rk/rkst" path="rkst" remote="rk" revision="c264f23734649fdb83d983bea7bcf11612651926" upstream="rk32/mid/6.0/develop"/>
-  <project name="rk/u-boot" path="u-boot" remote="rk3288" revision="4f2523c3a0b201ec2c476399b5d5a756c8911c39" upstream="next-dev"/>
+  <project name="rk/u-boot" path="u-boot" remote="rk3288" revision="6cd813903159fcb40c4d415eba035e654d069d7e" upstream="rk3288-pie-mr1-gms-express-baseline"/>
   <project name="toolchain/benchmark" revision="ce43588700ff84f20b6bf6a513d8932f693e33dd" upstream="refs/tags/android-9.0.0_r37"/>
   <project groups="pdk" name="toolchain/binutils" revision="15d7fe529a4fc80dcbb21306e55cb55f7ec1cf4a" upstream="refs/tags/android-9.0.0_r37"/>
   <project groups="pdk" name="toolchain/pgo-profiles" revision="24bd8873cfbddd16a8fb4c485c6ffa3406a33489" upstream="refs/tags/android-9.0.0_r37"/>
