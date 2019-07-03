@@ -7,9 +7,8 @@
   
   <project name="RKDocs-android" path="RKDocs/android" remote="origin" revision="2becde975e0b535236a41e4b88979f5d29ec07ca" upstream="master"/>
   <project name="RKDocs-common" path="RKDocs/common" remote="origin" revision="ba6f960caf9e66d77794b15cbdc7a5aa6bf5e1e6" upstream="master"/>
-  <project name="RKDocs-rk3399pro" path="RKDocs/rk3399pro" remote="origin" revision="3d34658c9c8f8c9eb2a0f58f413f88e500c1762f" upstream="master"/>
-  <project name="RKNPUTool" path="RKNPUTools" remote="origin" revision="c31dfeadfe5bd66fcc80859e8ef6699b273f097a" upstream="master"/>
-  <project name="RKTools" remote="origin" revision="b0c8a69ce401577ef2fe988bb299f47b2b4b22ca" upstream="master"/>
+  <project name="RKDocs-rk3328" path="RKDocs/rk3328" remote="origin" revision="789fbac94580e20ff53b6bfaea6da4f42c2c6300" upstream="master"/>
+  <project name="RKTools" remote="origin" revision="f8647015a36e8d7bbc1d0d1f562435e67adee9ca" upstream="eaidk310"/>
   <project groups="pdk" name="bionic" remote="origin" revision="f8822112d3f3062028c24dd8a7bea48259412d39" upstream="master"/>
   <project groups="pdk" name="bootable-recovery" path="bootable/recovery" remote="origin" revision="82f5596d3277f016823a9c13b40e0ee9e6768b67" upstream="master"/>
   <project groups="pdk" name="build-make" path="build/make" remote="origin" revision="d491bbb54f15dcf2aed144b9c05b8ec273868eb1" upstream="master">
@@ -25,12 +24,12 @@
     <linkfile dest="Android.bp" src="root.bp"/>
     <linkfile dest="bootstrap.bash" src="bootstrap.bash"/>
   </project>
-  <project name="device-rockchip-common" path="device/rockchip/common" remote="origin" revision="edc2f966ab24e22ab386d11b7a289c194d4b2edd" upstream="master">
+  <project name="device-rockchip-common" path="device/rockchip/common" remote="origin" revision="c210ae4dcf5fa0b92da34d903274a5271838154e" upstream="eaidk310">
     <copyfile dest=".classpath" src=".classpath"/>
     <copyfile dest="mkimage.sh" src="mkimage.sh"/>
     <copyfile dest="javaenv.sh" src="javaenv.sh"/>
   </project>
-  <project name="device-rockchip-rk3399pro" path="device/rockchip/rk3399pro" remote="origin" revision="bea22bb5369acddeb05f22f7cbd9dacaca098fb2" upstream="master">
+  <project name="device-rockchip-rk3228h" path="device/rockchip/rk3228h" remote="origin" revision="90a8bf639e147009cfc7c38b4eefffd70f2ffddf" upstream="eaidk310">
     <copyfile dest="buildspec.mk" src="buildspec.mk"/>
     <copyfile dest="build.sh" src="build.sh"/>
   </project>
@@ -76,6 +75,7 @@
   <project name="external-io" path="external/io" remote="origin" revision="ce23c82ae301239f8500e91a0008faa06db15147" upstream="master"/>
   <project name="external-iperf" path="external/iperf" remote="origin" revision="2879774647ed7083f88735cd430222afbf29b016" upstream="master"/>
   <project groups="pdk" name="external-libdrm" path="external/libdrm" remote="origin" revision="c6c4756adfc4f6fc1b88ee5268da3f3ca1eaa5ce" upstream="master"/>
+  <project groups="pdk" name="external-libjpeg-turbo" path="external/libjpeg-turbo" remote="origin" revision="b8aaab96d985be5445e3a5d96eda97ea1c405f2f" upstream="eaidk310"/>
   <project groups="pdk" name="external-libusb-compat" path="external/libusb-compat" remote="origin" revision="84a04919b7bd62a5945df55c05662ed47aa5bdaf" upstream="master"/>
   <project name="external-ntfs-3g" path="external/ntfs-3g" remote="origin" revision="26216247ade4637ab2bd812ffa0372b5276efb77" upstream="master"/>
   <project groups="pdk" name="external-ppp" path="external/ppp" remote="origin" revision="4845f78dcebbb221727166ccfa770e3592d5c1a9" upstream="master"/>
@@ -88,7 +88,6 @@
   <project groups="pdk" name="frameworks-av" path="frameworks/av" remote="origin" revision="19fa0e8dd9c231f98f81d95501712ec82ea787cc" upstream="master"/>
   <project name="frameworks-base" path="frameworks/base" remote="origin" revision="b1828831120f4938a224703b25e649daa18c749f" upstream="master"/>
   <project groups="pdk-cw-fs,pdk-fs" name="frameworks-ex" path="frameworks/ex" remote="origin" revision="33ccc61d9ef90b0d6b426e3b6fba29c7393c1709" upstream="master"/>
-  <project groups="pdk" name="frameworks-ml" path="frameworks/ml" remote="origin" revision="5b9cded3a364389955a62777d0d95ac3485220b0" upstream="master"/>
   <project groups="pdk" name="frameworks-native" path="frameworks/native" remote="origin" revision="e4d587f717a3254d5929559d67a1109fdf0d2204" upstream="master"/>
   <project groups="pdk-fs" name="frameworks-opt-net-ethernet" path="frameworks/opt/net/ethernet" remote="origin" revision="70f267ce2df126b69cbbea23529d76b114ff4d1b" upstream="master"/>
   <project groups="pdk-fs" name="frameworks-opt-net-pppoe" path="frameworks/opt/net/pppoe" remote="origin" revision="c06ee5486eb46f9dc337ef200cf042840d946cf6" upstream="master"/>
@@ -102,22 +101,20 @@
   <project name="hardware-ril" path="hardware/ril" remote="origin" revision="408d27b7ee63d216351a2d0c226a478cdd44300f" upstream="master"/>
   <project name="hardware-rockchip-audio" path="hardware/rockchip/audio" remote="origin" revision="13849249f2be5fa781970e8dfb891ee00af194d3" upstream="master"/>
   <project name="hardware-rockchip-camera" path="hardware/rockchip/camera" remote="origin" revision="6479534032319a35cb32a46bb1549b2a281addb7" upstream="master"/>
+  <project name="hardware-rockchip-camera_v3" path="hardware/rockchip/camera_v3" remote="origin" revision="ec2e78d0d2003c2b6aba2d8a67d97c65b40b368a" upstream="master"/>
   <project name="hardware-rockchip-drmservice" path="hardware/rockchip/drmservice" remote="origin" revision="a8f7927d99facc0d0eb2f984773c58c97a7fd85d" upstream="master"/>
+  <project name="hardware-rockchip-hdmicec" path="hardware/rockchip/hdmicec" remote="origin" revision="32e6a1e030e865f0dbffba11248a1d0d88694b18" upstream="eaidk310"/>
   <project name="hardware-rockchip-hwcomposer" path="hardware/rockchip/hwcomposer" remote="origin" revision="60f7d99defa6dd9a9b614c82bedabef34b1d9c1d" upstream="master"/>
   <project name="hardware-rockchip-jpeghw" path="hardware/rockchip/jpeghw" remote="origin" revision="72b3537df45b9f20c93c9c1031aaaa73733924a2" upstream="master"/>
-  <project name="hardware-rockchip-libdirect-texture" path="hardware/rockchip/libdirect-texture" remote="origin" revision="b0b6b3560ca0ab483a95ad32c6e6e77dfcbf6255" upstream="master"/>
-  <project name="hardware-rockchip-libgralloc" path="hardware/rockchip/libgralloc" remote="origin" revision="dfc342f6202f17fe383043cc0c7cd8e294045e11" upstream="master"/>
+  <project name="hardware-rockchip-libgralloc" path="hardware/rockchip/libgralloc" remote="origin" revision="3aa5e23ef48a52b90ccb7f8c50d65c50fa4379c3" upstream="eaidk310"/>
   <project name="hardware-rockchip-libiep" path="hardware/rockchip/libiep" remote="origin" revision="1c2f90b56f46ba183c7707947ce4d80232b3317a" upstream="master"/>
   <project name="hardware-rockchip-liblights" path="hardware/rockchip/liblights" remote="origin" revision="b29a973a3a6562c6733f67dbbd64c43c18079fb4" upstream="master"/>
   <project name="hardware-rockchip-librga" path="hardware/rockchip/librga" remote="origin" revision="76cfbd3a004cce12540543b2aaa2bec8dba3225a" upstream="master"/>
   <project name="hardware-rockchip-librkvpu" path="hardware/rockchip/librkvpu" remote="origin" revision="4c9cc509456cdef94cda50a1a4713c80dd227b4a" upstream="master"/>
-  <project name="hardware-rockchip-npu_powerctrl" path="hardware/rockchip/npu_powerctrl" remote="origin" revision="8e83978d48415a5fa4e29c7b41837bcd780353ee" upstream="master"/>
-  <project name="hardware-rockchip-npu_transfer" path="hardware/rockchip/npu_transfer" remote="origin" revision="e7906223e4e12cc484c83ec5b496f73d829d05d1" upstream="master"/>
   <project name="hardware-rockchip-omx_il" path="hardware/rockchip/omx_il" remote="origin" revision="23c87d6e03ddcd15d8b80681f201308ad484c8bb" upstream="master"/>
   <project name="hardware-rockchip-power" path="hardware/rockchip/power" remote="origin" revision="1a59ac7bba593cd69ed394a1730989975fa5d958" upstream="master"/>
   <project name="hardware-rockchip-sensor" path="hardware/rockchip/sensor" remote="origin" revision="fff7a59402643bd803239cc4d0212c0dd09a2c00" upstream="master"/>
-  <project name="hardware-rockchip-upgrade_tool" path="hardware/rockchip/upgrade_tool" remote="origin" revision="1681724457b4c3b2c07d08618ef706b6f9d792b8" upstream="master"/>
-  <project name="kernel" remote="origin" revision="9cd6d72a0caf583e55557c9d42c41c65dccc4d42" upstream="stable"/>
+  <project name="kernel" remote="origin" revision="f68431a1b59e4becad6037ec1a87ff698053c836" upstream="eaidk310"/>
   <project name="kernel/tests" revision="fa4729e5d6aeba19cc9ea0b3cbd4eb085865beda" upstream="refs/tags/android-8.1.0_r51"/>
   <project groups="pdk-cw-fs,pdk-fs" name="packages-apps-Bluetooth" path="packages/apps/Bluetooth" remote="origin" revision="ee5813ffb2d7aaca1baec799882f4e737055f6ed" upstream="master"/>
   <project groups="pdk-fs" name="packages-apps-Browser2" path="packages/apps/Browser2" remote="origin" revision="08e5514f97c94d674de472aeeed6f52bf66d4ab4" upstream="master"/>
@@ -130,8 +127,9 @@
   <project groups="pdk-fs" name="packages-apps-Music" path="packages/apps/Music" remote="origin" revision="025d4f4e4302d1e842e78ab99b7601d5bf356fc5" upstream="master"/>
   <project groups="pdk-fs" name="packages-apps-Settings" path="packages/apps/Settings" remote="origin" revision="a2f25ef657644dcf8d24ebeac5ca895111d3de1b" upstream="master"/>
   <project groups="pdk-fs" name="packages-apps-SoundRecorder" path="packages/apps/SoundRecorder" remote="origin" revision="673c9be3226f858bf96813e45fd816c921cca0d6" upstream="master"/>
+  <project groups="pdk-fs" name="packages-apps-TvSettings" path="packages/apps/TvSettings" remote="origin" revision="796f95b6d09a2da0a6efe52776e46ec63f617b6a" upstream="eaidk310"/>
   <project groups="pdk-fs" name="packages-apps-WallpaperPicker" path="packages/apps/WallpaperPicker" remote="origin" revision="d3d5a41679d6c8b1e95148f0551c5ea8394fa8aa" upstream="master"/>
-  <project groups="pdk-fs" name="packages-inputmethods-LatinIME" path="packages/inputmethods/LatinIME" remote="origin" revision="53d1623afd47601d166bd8bb9f6fc52111755cde" upstream="master"/>
+  <project groups="pdk-fs" name="packages-inputmethods-LatinIME" path="packages/inputmethods/LatinIME" remote="origin" revision="3048dafa6e23b9c2b98593316d2db377f47745d4" upstream="eaidk310"/>
   <project groups="pdk-cw-fs,pdk-fs" name="packages-providers-MediaProvider" path="packages/providers/MediaProvider" remote="origin" revision="2db41e549877e0877074cbda792a8f307340245a" upstream="master"/>
   <project groups="pdk-fs" name="packages-screensavers-PhotoTable" path="packages/screensavers/PhotoTable" remote="origin" revision="e2272378a98eefc7f2f1cf77321b5838f455ead6" upstream="master"/>
   <project groups="pdk-cw-fs,pdk-fs" name="packages-services-Telephony" path="packages/services/Telephony" remote="origin" revision="d407e46f53799a8b765bd164a534d10061ec1eff" upstream="master"/>
@@ -278,7 +276,6 @@
   <project groups="pdk" name="platform/external/libexif" path="external/libexif" revision="a64e1fb34d12ef69c9774b351b801681d3466928" upstream="refs/tags/android-8.1.0_r51"/>
   <project groups="pdk" name="platform/external/libgsm" path="external/libgsm" revision="5e0e72ca6c6ffc423ea1f755262d413e899c6a89" upstream="refs/tags/android-8.1.0_r51"/>
   <project groups="pdk" name="platform/external/libhevc" path="external/libhevc" revision="e674718c7a018923b9b4b208d82548bceff73f05" upstream="refs/tags/android-8.1.0_r51"/>
-  <project groups="pdk" name="platform/external/libjpeg-turbo" path="external/libjpeg-turbo" revision="48383bfd76f47e40fb110a5d6c3e7d6765998107" upstream="refs/tags/android-8.1.0_r51"/>
   <project groups="pdk" name="platform/external/libldac" path="external/libldac" revision="b1f61dd0e5639572bcc08b0e281337878bbf1b98" upstream="refs/tags/android-8.1.0_r51"/>
   <project groups="pdk" name="platform/external/liblzf" path="external/liblzf" revision="a88b9629447deabe8697d2f8fd4cc70aa6e1b563" upstream="refs/tags/android-8.1.0_r51"/>
   <project groups="pdk" name="platform/external/libmicrohttpd" path="external/libmicrohttpd" revision="1e68f5d827a859ba3b7ab6a70a60247e0b96afa5" upstream="refs/tags/android-8.1.0_r51"/>
@@ -419,6 +416,7 @@
   <project groups="pdk" name="platform/frameworks/hardware/interfaces" path="frameworks/hardware/interfaces" revision="89efd37ec3ac957e2190828644c0aa331e604bce" upstream="refs/tags/android-8.1.0_r51"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/layoutlib" path="frameworks/layoutlib" revision="af970950be638cf64850a72e0b45d637dafb3f44" upstream="refs/tags/android-8.1.0_r51"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/minikin" path="frameworks/minikin" revision="3485021345137362a2bce055b913579738958e09" upstream="refs/tags/android-8.1.0_r51"/>
+  <project groups="pdk" name="platform/frameworks/ml" path="frameworks/ml" revision="5b83e711264d05ce3bc2db7b1cbf261d7bce362a" upstream="refs/tags/android-8.1.0_r51"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/multidex" path="frameworks/multidex" revision="b288c36f55c976dfc1ac47c426b4adf60df4844b" upstream="refs/tags/android-8.1.0_r51"/>
   <project groups="pdk-fs" name="platform/frameworks/opt/bitmap" path="frameworks/opt/bitmap" revision="a0d4e3108663202564a6833b76770075b8e5b767" upstream="refs/tags/android-8.1.0_r51"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/bluetooth" path="frameworks/opt/bluetooth" revision="6dbe3ff8cdcf84bfcf2667300c08f01d938b1c93" upstream="refs/tags/android-8.1.0_r51"/>
@@ -529,7 +527,6 @@
   <project groups="pdk" name="platform/packages/apps/Test/connectivity" path="packages/apps/Test/connectivity" revision="367804149bc6f68b77ff4a1d76a585780d98b380" upstream="refs/tags/android-8.1.0_r51"/>
   <project groups="pdk" name="platform/packages/apps/TimeZoneData" path="packages/apps/TimeZoneData" revision="39e1bcea189768bd5dc6302bd48b46627cdb7494" upstream="refs/tags/android-8.1.0_r51"/>
   <project groups="pdk" name="platform/packages/apps/TimeZoneUpdater" path="packages/apps/TimeZoneUpdater" revision="4e707d8d1e16bb3acac2ecb61a35a7e22c1aa34f" upstream="refs/tags/android-8.1.0_r51"/>
-  <project groups="pdk-fs" name="platform/packages/apps/TvSettings" path="packages/apps/TvSettings" revision="1199e28d237193b98d3e1d7374a6df98572a3ea1" upstream="refs/tags/android-8.1.0_r51"/>
   <project groups="pdk-fs" name="platform/packages/apps/UnifiedEmail" path="packages/apps/UnifiedEmail" revision="25c45d246c80af0b9863c7757cd28663b5c6f397" upstream="refs/tags/android-8.1.0_r51"/>
   <project name="platform/packages/experimental" path="packages/experimental" revision="2460de484cdc9e40806f55988fd962c655e30a62" upstream="refs/tags/android-8.1.0_r51"/>
   <project groups="pdk-fs" name="platform/packages/inputmethods/OpenWnn" path="packages/inputmethods/OpenWnn" revision="85ca997d8265739e94b5bd9d19460c9b87b9ec59" upstream="refs/tags/android-8.1.0_r51"/>
@@ -614,6 +611,7 @@
   <project groups="pdk" name="platform/system/nfc" path="system/nfc" revision="92d2537b49cd5fd31badc37abddd60fd2031ac06" upstream="refs/tags/android-8.1.0_r51"/>
   <project groups="pdk" name="platform/system/nvram" path="system/nvram" revision="a2cbda182e4631dc45b3e988db9a6c0a0c36a610" upstream="refs/tags/android-8.1.0_r51"/>
   <project groups="pdk" name="platform/system/security" path="system/security" revision="13bc873664a5a1611ba1e82fd3dd7f21012ac41a" upstream="refs/tags/android-8.1.0_r51"/>
+  <project groups="pdk" name="platform/system/sepolicy" path="system/sepolicy" revision="fa195295359f462e149b669c3e0a64640bf8d6d5" upstream="refs/tags/android-8.1.0_r51"/>
   <project groups="pdk" name="platform/system/timezone" path="system/timezone" revision="4b7af69e032474f75600316fb679adfac7183320" upstream="refs/tags/android-8.1.0_r51"/>
   <project groups="pdk" name="platform/system/tools/aidl" path="system/tools/aidl" revision="3cbb4bf3d8d7b9e99ec1d2f75aab93034bdf3f03" upstream="refs/tags/android-8.1.0_r51"/>
   <project groups="pdk" name="platform/system/tools/hidl" path="system/tools/hidl" revision="25b52e2244dac93593e689b42149122313e2fd5a" upstream="refs/tags/android-8.1.0_r51"/>
@@ -639,15 +637,14 @@
   <project groups="pdk,tradefed" name="platform/tools/tradefederation/contrib" path="tools/tradefederation/contrib" revision="8dd3029197cdaa6d9e867d4c645b489a6f9f52b6" upstream="refs/tags/android-8.1.0_r51"/>
   <project name="prebuilts-gcc-linux-x86-aarch64-gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" remote="origin" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master"/>
   <project name="prebuilts-gcc-linux-x86-arm-gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" path="prebuilts/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" remote="origin" revision="dd4df7dff4f1df65d78939a958b760a79e3650a1" upstream="master"/>
-  <project name="rkbin" remote="origin" revision="5093dfb9570ceb9ea201ee21f58cf2c4eb3c58b7" upstream="master"/>
+  <project name="rkbin" remote="origin" revision="9027dc2fd7568c5c87a744a0a3c0725ce4b8b623" upstream="master"/>
   <project name="rkst" remote="origin" revision="c264f23734649fdb83d983bea7bcf11612651926" upstream="master"/>
   <project groups="pdk" name="system-bt" path="system/bt" remote="origin" revision="97e7cf1d4cd16318503953af450d1e041668f21e" upstream="master"/>
   <project groups="pdk" name="system-core" path="system/core" remote="origin" revision="cfc9c2005212253162ef844d31206f9da21b610a" upstream="master"/>
-  <project groups="pdk" name="system-sepolicy" path="system/sepolicy" remote="origin" revision="a3bf1cab1b67c1b0bb4cc57e89938ba05e2a7a78" upstream="master"/>
   <project groups="pdk" name="system-vold" path="system/vold" remote="origin" revision="f377bc57377c922aee2cdcec92872c461a1ff437" upstream="master"/>
   <project groups="pdk" name="toolchain/binutils" revision="a4125cf8aeab9dfeac00f1bda80645987897152f" upstream="refs/tags/android-8.1.0_r51"/>
   <project name="u-boot" remote="origin" revision="6e87d5f27b4d263fb22d86e4b4a79170810d4e6e" upstream="master"/>
-  <project name="vendor-rockchip-common" path="vendor/rockchip/common" remote="origin" revision="c8616beb2a37434f539d9b8eaeaf3a1a7849a631" upstream="master"/>
+  <project name="vendor-rockchip-common" path="vendor/rockchip/common" remote="origin" revision="3359aeab9257713ec2961873921328aa99a104c5" upstream="master"/>
   
   <repo-hooks enabled-list="pre-upload" in-project="platform/tools/repohooks"/>
 </manifest>
