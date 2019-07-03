@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project name="rk/kernel" path="kernel" remote="vamrs" revision="a9dc309cd5496d32db58b16bbb308e6b5bd41ffe" upstream="rk3288-android-9.0"/>
-  <project name="rk/platform/vendor/rockchip/common" path="vendor/rockchip/common" remote="vamrs" revision="e9d6f1270e235f945579ae5508733ef9fde770df" upstream="rk3288-android-9.0"/>
+  <project name="rk/kernel" path="kernel" remote="vamrs" revision="59cd650a6eaf32f126138841e8bff0050303ca18" upstream="rk3288-android-9.0"/>
+  <project name="rk/platform/vendor/rockchip/common" path="vendor/rockchip/common" remote="vamrs" revision="0a02245202cf9c3811edadb267173d368c30b2b0" upstream="rk3288-android-9.0"/>
 </manifest>

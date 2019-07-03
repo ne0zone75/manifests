@@ -6,14 +6,14 @@
   <remote fetch="https://gitlab.com/rockchip-group/" name="rk3288"/>
   <remote fetch="https://gitlab.com/rk-vendor/" name="vamrs"/>
 
-  <default remote="aosp" revision="refs/tags/android-9.0.0_r34" sync-j="4"/>
+  <default remote="aosp" revision="refs/tags/android-9.0.0_r37" sync-j="4"/>
   
   <include name="google.xml" />
   <include name="rockchip.xml" />
   <include name="vamrs-vendor.xml" />
 
-  <project groups="pdk,tradefed" remote="aosp-p" name="platform/tools/tradefederation" path="tools/tradefederation/core" revision="b13d220e6560929aa234b8d1627825fa0355544d" upstream="refs/tags/android-9.0.0_r34"/>
-  <project groups="pdk" remote="aosp-p" name="platform/build" path="build/make" revision="397685eea762b8b3bfa119b2dccace8a8d3d5445" upstream="rk33/mid/9.0/develop">
+  <project groups="pdk,tradefed" remote="aosp-p" name="platform/tools/tradefederation" path="tools/tradefederation/core" revision="29ffffa9fe15bbe63213944652dbd0f732cfaec5" upstream="refs/tags/android-9.0.0_r37"/>
+  <project groups="pdk" remote="aosp-p" name="platform/build" path="build/make" revision="225039f3d6c9f483cb21a2f68455d706c42dd2f8" upstream="rk33/mid/9.0/develop">
     <copyfile dest="Makefile" src="core/root.mk"/>
     <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
     <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default"/>
