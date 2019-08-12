@@ -640,7 +640,7 @@
   <project groups="pdk,tradefed" name="platform/tools/tradefederation/contrib" path="tools/tradefederation/contrib" revision="8dd3029197cdaa6d9e867d4c645b489a6f9f52b6" upstream="refs/tags/android-8.1.0_r51"/>
   <project name="prebuilts-gcc-linux-x86-aarch64-gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" remote="origin" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master"/>
   <project name="prebuilts-gcc-linux-x86-arm-gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" path="prebuilts/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" remote="origin" revision="dd4df7dff4f1df65d78939a958b760a79e3650a1" upstream="master"/>
-  <project name="rkbin" remote="origin" revision="cb4df2524601b776923548e4cd0eab8c92110c8c" upstream="master"/>
+  <project name="rkbin" remote="vamrs" revision="de7474f96eafddd071a07973dc374e006ad7c2c1" upstream="rk3399pro-android-8.1"/>
   <project name="rkst" remote="origin" revision="c264f23734649fdb83d983bea7bcf11612651926" upstream="master"/>
   <project groups="pdk" name="system-bt" path="system/bt" remote="origin" revision="97e7cf1d4cd16318503953af450d1e041668f21e" upstream="master"/>
   <project groups="pdk" name="system-core" path="system/core" remote="origin" revision="cfc9c2005212253162ef844d31206f9da21b610a" upstream="master"/>
@@ -648,7 +648,7 @@
   <project groups="pdk" name="system-vold" path="system/vold" remote="origin" revision="f377bc57377c922aee2cdcec92872c461a1ff437" upstream="master"/>
   <project groups="pdk" name="toolchain/binutils" revision="a4125cf8aeab9dfeac00f1bda80645987897152f" upstream="refs/tags/android-8.1.0_r51"/>
   <project name="u-boot" remote="origin" revision="e9ecb6b25e0630ffa5994b324decde082fe16a65" upstream="master"/>
-  <project name="vendor-rockchip-common" path="vendor/rockchip/common" remote="origin" revision="58f78ca026a51ac569a542c330a30917569dd7ea" upstream="master"/>
+  <project name="vendor-rockchip-common" path="vendor/rockchip/common" remote="vamrs" revision="8a103a6d487e280697a683b399ccabf9a7008852" upstream="rk3399pro-android-8.1"/>
   
   <repo-hooks enabled-list="pre-upload" in-project="platform/tools/repohooks"/>
 </manifest>
