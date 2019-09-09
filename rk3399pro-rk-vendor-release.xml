@@ -10,10 +10,10 @@
   <project name="RKDocs-common" path="RKDocs/common" remote="origin" revision="ba6f960caf9e66d77794b15cbdc7a5aa6bf5e1e6" upstream="master"/>
   <project name="RKDocs-rk3399pro" path="RKDocs/rk3399pro" remote="origin" revision="3d34658c9c8f8c9eb2a0f58f413f88e500c1762f" upstream="master"/>
   <project name="RKNPUTool" path="RKNPUTools" remote="origin" revision="c31dfeadfe5bd66fcc80859e8ef6699b273f097a" upstream="master"/>
-  <project name="RKTools" remote="origin" revision="b0c8a69ce401577ef2fe988bb299f47b2b4b22ca" upstream="master"/>
+  <project name="RKTools" remote="rk-vendor" revision="970e043500aa8b02df76c0849310e9b8234012c1" upstream="rk3399pro-android-8.1"/>
   <project groups="pdk" name="bionic" remote="origin" revision="f8822112d3f3062028c24dd8a7bea48259412d39" upstream="master"/>
-  <project groups="pdk" name="bootable-recovery" path="bootable/recovery" remote="origin" revision="82f5596d3277f016823a9c13b40e0ee9e6768b67" upstream="master"/>
-  <project groups="pdk" name="build-make" path="build/make" remote="origin" revision="d491bbb54f15dcf2aed144b9c05b8ec273868eb1" upstream="master">
+  <project groups="pdk" name="platform/bootable/recovery" path="bootable/recovery" remote="rk-vendor" revision="1cc48c60f32ca2081d9ebbc14dfe1527e13690c4" upstream="rk3399pro-android-8.1"/>
+  <project groups="pdk" name="build/make" path="build/make" remote="rk-vendor" revision="4696b9500a376deef119161e8f0f28a1c2777c22" upstream="rk3399pro-android-8.1">
     <copyfile dest="Makefile" src="core/root.mk"/>
     <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
     <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default"/>
@@ -26,12 +26,12 @@
     <linkfile dest="Android.bp" src="root.bp"/>
     <linkfile dest="bootstrap.bash" src="bootstrap.bash"/>
   </project>
-  <project name="device-rockchip-common" path="device/rockchip/common" remote="origin" revision="edc2f966ab24e22ab386d11b7a289c194d4b2edd" upstream="master">
+  <project name="rk/device/rockchip/rksdk" path="device/rockchip/common" remote="rk-vendor" revision="efd63f5d128e9c57cc540bf7092b0310cce05593" upstream="rk3399pro-android-8.1">
     <copyfile dest=".classpath" src=".classpath"/>
     <copyfile dest="mkimage.sh" src="mkimage.sh"/>
     <copyfile dest="javaenv.sh" src="javaenv.sh"/>
   </project>
-  <project name="rk/device/rockchip/rk3399pro" path="device/rockchip/rk3399pro" remote="rk-vendor" revision="653152dc39436550fb4800d7dc1134484b1e5a8e" upstream="rk3399pro-android-8.1">
+  <project name="rk/device/rockchip/rk3399pro" path="device/rockchip/rk3399pro" remote="rk-vendor" revision="9216b1f27e3e153ba214342ae42f21c4967b7f40" upstream="rk3399pro-android-8.1">
     <copyfile dest="buildspec.mk" src="buildspec.mk"/>
     <copyfile dest="build.sh" src="build.sh"/>
   </project>
@@ -643,12 +643,12 @@
   <project name="rk/rkbin" path="rkbin" remote="rk-vendor" revision="de7474f96eafddd071a07973dc374e006ad7c2c1" upstream="rk3399pro-android-8.1"/>
   <project name="rkst" remote="origin" revision="c264f23734649fdb83d983bea7bcf11612651926" upstream="master"/>
   <project groups="pdk" name="system-bt" path="system/bt" remote="origin" revision="97e7cf1d4cd16318503953af450d1e041668f21e" upstream="master"/>
-  <project groups="pdk" name="system-core" path="system/core" remote="origin" revision="cfc9c2005212253162ef844d31206f9da21b610a" upstream="master"/>
+  <project groups="pdk" name="platform/system/core" path="system/core" remote="rk-vendor" revision="610dfbf6a20253105eae54f1f4398e26898bb8da" upstream="rk3399pro-android-8.1"/>
   <project groups="pdk" name="system-sepolicy" path="system/sepolicy" remote="origin" revision="a3bf1cab1b67c1b0bb4cc57e89938ba05e2a7a78" upstream="master"/>
   <project groups="pdk" name="system-vold" path="system/vold" remote="origin" revision="f377bc57377c922aee2cdcec92872c461a1ff437" upstream="master"/>
   <project groups="pdk" name="toolchain/binutils" revision="a4125cf8aeab9dfeac00f1bda80645987897152f" upstream="refs/tags/android-8.1.0_r51"/>
-  <project name="u-boot" remote="origin" revision="e9ecb6b25e0630ffa5994b324decde082fe16a65" upstream="master"/>
-  <project name="rk/platform/vendor/rockchip/common" path="vendor/rockchip/common" remote="rk-vendor" revision="8a103a6d487e280697a683b399ccabf9a7008852" upstream="rk3399pro-android-8.1"/>
+  <project name="rk/u-boot" path="u-boot" remote="rk-vendor" revision="102d5c777f423fcfd021c71d83e196084b9ace76" upstream="rk3399pro-android-8.1"/>
+  <project name="rk/platform/vendor/rockchip/common" path="vendor/rockchip/common" remote="rk-vendor" revision="143f5a71bd0ebb4999ce73dfcfdd3a3757719133" upstream="rk3399pro-android-8.1"/>
   
   <repo-hooks enabled-list="pre-upload" in-project="platform/tools/repohooks"/>
 </manifest>
