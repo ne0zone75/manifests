@@ -26,7 +26,7 @@
     <linkfile dest="Android.bp" src="root.bp"/>
     <linkfile dest="bootstrap.bash" src="bootstrap.bash"/>
   </project>
-  <project name="rk/device/rockchip/rksdk" path="device/rockchip/common" remote="rk-vendor" revision="efd63f5d128e9c57cc540bf7092b0310cce05593" upstream="rk3399pro-android-8.1">
+  <project name="rk/device/rockchip/rksdk" path="device/rockchip/common" remote="rk-vendor" revision="77f94030f1d558faec554a07e3f63e0c2b5d8ce9" upstream="rk3399pro-android-8.1">
     <copyfile dest=".classpath" src=".classpath"/>
     <copyfile dest="mkimage.sh" src="mkimage.sh"/>
     <copyfile dest="javaenv.sh" src="javaenv.sh"/>
@@ -640,14 +640,14 @@
   <project groups="pdk,tradefed" name="platform/tools/tradefederation/contrib" path="tools/tradefederation/contrib" revision="8dd3029197cdaa6d9e867d4c645b489a6f9f52b6" upstream="refs/tags/android-8.1.0_r51"/>
   <project name="prebuilts-gcc-linux-x86-aarch64-gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" remote="origin" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master"/>
   <project name="prebuilts-gcc-linux-x86-arm-gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" path="prebuilts/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" remote="origin" revision="dd4df7dff4f1df65d78939a958b760a79e3650a1" upstream="master"/>
-  <project name="rk/rkbin" path="rkbin" remote="rk-vendor" revision="de7474f96eafddd071a07973dc374e006ad7c2c1" upstream="rk3399pro-android-8.1"/>
+  <project name="rk/rkbin" path="rkbin" remote="rk-vendor" revision="cb8bbfba3fe36d4fae4fb3c3a2afc17b7c8c855a" upstream="rk3399pro-android-8.1"/>
   <project name="rkst" remote="origin" revision="c264f23734649fdb83d983bea7bcf11612651926" upstream="master"/>
   <project groups="pdk" name="system-bt" path="system/bt" remote="origin" revision="97e7cf1d4cd16318503953af450d1e041668f21e" upstream="master"/>
   <project groups="pdk" name="platform/system/core" path="system/core" remote="rk-vendor" revision="610dfbf6a20253105eae54f1f4398e26898bb8da" upstream="rk3399pro-android-8.1"/>
   <project groups="pdk" name="system-sepolicy" path="system/sepolicy" remote="origin" revision="a3bf1cab1b67c1b0bb4cc57e89938ba05e2a7a78" upstream="master"/>
   <project groups="pdk" name="system-vold" path="system/vold" remote="origin" revision="f377bc57377c922aee2cdcec92872c461a1ff437" upstream="master"/>
   <project groups="pdk" name="toolchain/binutils" revision="a4125cf8aeab9dfeac00f1bda80645987897152f" upstream="refs/tags/android-8.1.0_r51"/>
-  <project name="rk/u-boot" path="u-boot" remote="rk-vendor" revision="102d5c777f423fcfd021c71d83e196084b9ace76" upstream="rk3399pro-android-8.1"/>
+  <project name="rk/u-boot" path="u-boot" remote="rk-vendor" revision="ff315a99cccf38727602e4b77540021029258406" upstream="rk3399pro-android-8.1"/>
   <project name="rk/platform/vendor/rockchip/common" path="vendor/rockchip/common" remote="rk-vendor" revision="143f5a71bd0ebb4999ce73dfcfdd3a3757719133" upstream="rk3399pro-android-8.1"/>
   
   <repo-hooks enabled-list="pre-upload" in-project="platform/tools/repohooks"/>
