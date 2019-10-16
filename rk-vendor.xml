@@ -24,4 +24,6 @@
   <project name="android/rk/platform/vendor/open-gapps" path="vendor/opengapps" remote="rk-vendor" revision="76bb8f77b57c49b09d424f42209dff1387831225"/>
   <project remote="rk-vendor" groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/base" path="frameworks/base" revision="de7099b87f4a32621465f094a603810842eb0158"/>
   <project name="android/rk/hardware/rk29/audio" path="hardware/rockchip/audio" remote="rk-vendor" revision="2c07095812a852544e087b1633f548be96706e84"/>
+
+  <project remote="rk-vendor" groups="pdk-fs" name="platform/packages/apps/Settings" path="packages/apps/Settings" revision="fa93bf3984086cec759986dcbb7a89861e72c601" upstream="rk3399-n-all"/>
 </manifest>

@@ -64,7 +64,6 @@
   <project remote="rk" groups="pdk-fs" name="platform/packages/apps/Music" path="packages/apps/Music" revision="8bd4081f6961f5ce809bedb91307ce9e1c94a86b" upstream="rk33/mid/7.0/develop"/>
   <project remote="rk" groups="apps_nfc,pdk-fs" name="platform/packages/apps/Nfc" path="packages/apps/Nfc" revision="33dabdb68201e2168b4f3f8e60f328830435aca4" upstream="rk33/mid/7.0/develop"/>
   <project remote="rk" groups="pdk-fs" name="platform/packages/apps/QuickSearchBox" path="packages/apps/QuickSearchBox" revision="9baf719dae72671c856082f5b82fe9bbeb649e72" upstream="rk33/mid/7.0/develop"/>
-  <project remote="rk" groups="pdk-fs" name="platform/packages/apps/Settings" path="packages/apps/Settings" revision="4ae9fcb0b63fd72928ed651bbaf38dab26bf8d79" upstream="rk33/mid/7.0/develop"/>
   <project remote="rk" groups="pdk-fs" name="platform/packages/apps/SoundRecorder" path="packages/apps/SoundRecorder" revision="9f38d608373fc6474f724756ae6992f9c624f13f" upstream="rk33/mid/7.0/develop"/>
   <project remote="rk" groups="pdk-fs" name="platform/packages/apps/WallpaperPicker" path="packages/apps/WallpaperPicker" revision="fc44a4d1a8260dab15c16d075ba1369879b5038a" upstream="rk33/mid/7.0/develop"/>
   <project remote="rk" groups="pdk-fs" name="platform/packages/providers/BookmarkProvider" path="packages/providers/BookmarkProvider" revision="23fa1758e81057af1be92fdf86f8a5ec714e75fd" upstream="rk33/mid/7.0/develop"/>
