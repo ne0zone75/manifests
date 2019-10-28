@@ -87,7 +87,7 @@
   <project name="external-usb_modeswitch" path="external/usb_modeswitch" remote="origin" revision="61288cec5f63186f73cc0e3f2c3948dbd2693214" upstream="master"/>
   <project groups="pdk" name="external-wpa_supplicant_8" path="external/wpa_supplicant_8" remote="origin" revision="ef7578e4af8dfa79bbe871025b46fbb04b3afdc7" upstream="master"/>
   <project groups="pdk" name="frameworks-av" path="frameworks/av" remote="origin" revision="19fa0e8dd9c231f98f81d95501712ec82ea787cc" upstream="master"/>
-  <project name="frameworks-base" path="frameworks/base" remote="origin" revision="b1828831120f4938a224703b25e649daa18c749f" upstream="master"/>
+  <project name="platform/frameworks/base" path="frameworks/base" remote="rk-vendor" revision="ee706436a443c0426e7d0f79b173c98962de90e6" upstream="rk3399pro-android-8.1"/>
   <project groups="pdk-cw-fs,pdk-fs" name="frameworks-ex" path="frameworks/ex" remote="origin" revision="33ccc61d9ef90b0d6b426e3b6fba29c7393c1709" upstream="master"/>
   <project groups="pdk" name="frameworks-ml" path="frameworks/ml" remote="origin" revision="5b9cded3a364389955a62777d0d95ac3485220b0" upstream="master"/>
   <project groups="pdk" name="frameworks-native" path="frameworks/native" remote="origin" revision="e4d587f717a3254d5929559d67a1109fdf0d2204" upstream="master"/>
@@ -118,7 +118,7 @@
   <project name="hardware-rockchip-power" path="hardware/rockchip/power" remote="origin" revision="1a59ac7bba593cd69ed394a1730989975fa5d958" upstream="master"/>
   <project name="hardware-rockchip-sensor" path="hardware/rockchip/sensor" remote="origin" revision="fff7a59402643bd803239cc4d0212c0dd09a2c00" upstream="master"/>
   <project name="hardware-rockchip-upgrade_tool" path="hardware/rockchip/upgrade_tool" remote="origin" revision="436f8eca705b2c9ca82a451869b8cdd9e9358cea" upstream="master"/>
-  <project name="rk/kernel" path="kernel" remote="rk-vendor" revision="59ca6b08a26c61353043c27f6441a0ad600377c2" upstream="rk3399pro-toybrick-stable"/>
+  <project name="rk/kernel" path="kernel" remote="rk-vendor" revision="cfaae478847b43083382f3399d6032e913e31083" upstream="rk3399pro-toybrick-stable"/>
   <project name="kernel/tests" revision="fa4729e5d6aeba19cc9ea0b3cbd4eb085865beda" upstream="refs/tags/android-8.1.0_r51"/>
   <project groups="pdk-cw-fs,pdk-fs" name="packages-apps-Bluetooth" path="packages/apps/Bluetooth" remote="origin" revision="ee5813ffb2d7aaca1baec799882f4e737055f6ed" upstream="master"/>
   <project groups="pdk-fs" name="packages-apps-Browser2" path="packages/apps/Browser2" remote="origin" revision="08e5514f97c94d674de472aeeed6f52bf66d4ab4" upstream="master"/>
