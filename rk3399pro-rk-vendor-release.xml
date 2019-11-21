@@ -648,7 +648,7 @@
   <project groups="pdk" name="system-vold" path="system/vold" remote="origin" revision="f377bc57377c922aee2cdcec92872c461a1ff437" upstream="master"/>
   <project groups="pdk" name="toolchain/binutils" revision="a4125cf8aeab9dfeac00f1bda80645987897152f" upstream="refs/tags/android-8.1.0_r51"/>
   <project name="rk/u-boot" path="u-boot" remote="rk-vendor" revision="ff315a99cccf38727602e4b77540021029258406" upstream="rk3399pro-android-8.1"/>
-  <project name="rk/platform/vendor/rockchip/common" path="vendor/rockchip/common" remote="rk-vendor" revision="8818984417b2e5b8fbadb401132c073ebaaf7cf0" upstream="rk3399pro-android-8.1"/>
+  <project name="rk/platform/vendor/rockchip/common" path="vendor/rockchip/common" remote="rk-vendor" revision="c427b68db0413004d8d91ba5c3dd6eabce63b20e" upstream="rk3399pro-android-8.1"/>
   
   <repo-hooks enabled-list="pre-upload" in-project="platform/tools/repohooks"/>
 </manifest>
